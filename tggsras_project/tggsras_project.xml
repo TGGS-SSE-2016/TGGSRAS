@@ -1,0 +1,72 @@
+<openerp>
+    <data>
+        <record model="ir.actions.act_window" id="tggsras_project_start_list">
+            <field name="name">TGGS RAS</field>
+            <field name="res_model">tggsras.project</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create the first project here :)
+                </p>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="tggsras_project_tree">
+            <field name="name">tggsras.project.tree</field>
+            <field name="model">tggsras.project</field>
+            <field name="arch" type="xml">
+                <tree string="Project List">
+                    <field name="name"/>
+                    <field name="customer"/>
+                    <field name="responsible"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="tggsras_project_form">
+            <field name="name">tggsras.project.form</field>
+            <field name="model">tggsras.project</field>
+            <field name="arch" type="xml">
+                <form string="Project Form">
+                    <header>
+                        <button name="tor" type="workflow" string="Receive TOR" states="draft" class=""/>
+                        <button name="accept" type="workflow" string="Customer Accept" states="tor" class=""/>
+                        <button name="contract" type="workflow" string="Contract Signed" states="accept" class=""/>
+                        <button name="operation" type="workflow" string="Start Operation" states="contract" class=""/>
+                        <button name="progress" type="workflow" string="In Progress" states="operation" class=""/>
+                        <button name="finish" type="workflow" string="Finish" states="progress" class=""/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="customer"/>
+                            <field name="responsible"/>
+                            <field name="expectStartDate"/>
+                            <field name="expectEndDate"/>
+                            <field name="estimatedIncome"/>
+                            <field name="estimatedExpense"/>
+                        </group>
+                        <notebook>
+                            <page string="Objective">
+                                <field name="objective"/>
+                            </page>
+
+                            <page string="Scope">
+                                <field name="scope"/>
+                            </page>
+
+                            <page string="Description">
+                                <field name="description"/>
+                            </page>
+
+                            <page string="Expected Result">
+                                <field name="expectedResult"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</openerp>

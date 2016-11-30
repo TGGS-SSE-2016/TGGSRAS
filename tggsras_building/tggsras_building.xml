@@ -1,0 +1,14 @@
+<openerp>
+    <data>
+      <record model="ir.actions.act_window" id="tggsras_building_list">
+          <field name="name">Building Cost</field>
+          <field name="res_model">tggsras.building</field>
+          <field name="view_type">form</field>
+          <field name="view_mode">form,tree</field>
+          <field name="help" type="html">
+              <p class="oe_view_nocontent_create">Create the first the bill right here :)
+              </p>
+          </field>
+      </record>
+    </data>
+</openerp>

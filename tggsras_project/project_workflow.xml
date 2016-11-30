@@ -1,0 +1,159 @@
+<openerp>
+    <data>
+      <record model="workflow" id="wkf_ras_project">
+            <field name="name">TGGS RAS project workflow</field>
+            <field name="osv">tggsras.project</field>
+            <field name="on_create">True</field>
+        </record>
+
+        <record model="ir.actions.server" id="set_project_to_draft">
+            <field name="name">Set RAS project to draft</field>
+            <field name="model_id" ref="model_tggsras_project"/>
+            <field name="code">
+                model.search([('id', 'in', context['active_ids'])]).action_draft()
+            </field>
+        </record>
+
+        <record model="workflow.activity" id="draft">
+            <field name="name">Draft</field>
+            <field name="wkf_id" ref="wkf_ras_project"/>
+            <field name="flow_start" eval="True"/>
+            <field name="kind">dummy</field>
+            <field name="action"></field>
+            <field name="action_id" ref="set_project_to_draft"/>
+        </record>
+
+        <record model="ir.actions.server" id="set_project_to_get_tor">
+            <field name="name">Set Project Receive TOR</field>
+            <field name="model_id" ref="model_tggsras_project"/>
+            <field name="code">
+                model.search([('id', 'in', context['active_ids'])]).action_tor()
+            </field>
+        </record>
+
+        <record model="workflow.activity" id="tor">
+            <field name="name">Receive TOR</field>
+            <field name="wkf_id" ref="wkf_ras_project"/>
+            <field name="kind">dummy</field>
+            <field name="action"></field>
+            <field name="action_id" ref="set_project_to_get_tor"/>
+        </record>
+
+        <record model="ir.actions.server" id="set_project_to_accept">
+            <field name="name">Set Project accept</field>
+            <field name="model_id" ref="model_tggsras_project"/>
+            <field name="code">
+                model.search([('id', 'in', context['active_ids'])]).action_accept()
+            </field>
+        </record>
+
+        <record model="workflow.activity" id="accept">
+            <field name="name">Customer accept</field>
+            <field name="wkf_id" ref="wkf_ras_project"/>
+            <field name="kind">dummy</field>
+            <field name="action"></field>
+            <field name="action_id" ref="set_project_to_accept"/>
+        </record>
+
+        <record model="ir.actions.server" id="set_project_to_contract_signed">
+            <field name="name">Set Project Contract Signed</field>
+            <field name="model_id" ref="model_tggsras_project"/>
+            <field name="code">
+                model.search([('id', 'in', context['active_ids'])]).action_contract()
+            </field>
+        </record>
+
+        <record model="workflow.activity" id="contract">
+            <field name="name">Contract Signed</field>
+            <field name="wkf_id" ref="wkf_ras_project"/>
+            <field name="kind">dummy</field>
+            <field name="action"></field>
+            <field name="action_id" ref="set_project_to_contract_signed"/>
+        </record>
+
+        <record model="ir.actions.server" id="set_project_to_operation_allowed">
+            <field name="name">Set Project Operation Allowed</field>
+            <field name="model_id" ref="model_tggsras_project"/>
+            <field name="code">
+                model.search([('id', 'in', context['active_ids'])]).action_operation()
+            </field>
+        </record>
+
+        <record model="workflow.activity" id="operation">
+            <field name="name">Operation Allowed</field>
+            <field name="wkf_id" ref="wkf_ras_project"/>
+            <field name="kind">dummy</field>
+            <field name="action"></field>
+            <field name="action_id" ref="set_project_to_operation_allowed"/>
+        </record>
+
+        <record model="ir.actions.server" id="set_project_to_progress">
+            <field name="name">Set Project Progress</field>
+            <field name="model_id" ref="model_tggsras_project"/>
+            <field name="code">
+                model.search([('id', 'in', context['active_ids'])]).action_progress()
+            </field>
+        </record>
+
+        <record model="workflow.activity" id="progress">
+            <field name="name">Progress</field>
+            <field name="wkf_id" ref="wkf_ras_project"/>
+            <field name="kind">dummy</field>
+            <field name="action"></field>
+            <field name="action_id" ref="set_project_to_progress"/>
+        </record>
+
+        <record model="ir.actions.server" id="set_project_to_finish">
+            <field name="name">Set Project Finish</field>
+            <field name="model_id" ref="model_tggsras_project"/>
+            <field name="code">
+                model.search([('id', 'in', context['active_ids'])]).action_finish()
+            </field>
+        </record>
+
+        <record model="workflow.activity" id="finish">
+            <field name="name">Finish</field>
+            <field name="wkf_id" ref="wkf_ras_project"/>
+            <field name="kind">dummy</field>
+            <field name="action"></field>
+            <field name="action_id" ref="set_project_to_finish"/>
+        </record>
+
+        <record model="workflow.transition" id="project_draft_to_tor">
+            <field name="act_from" ref="draft"/>
+            <field name="act_to" ref="tor"/>
+            <field name="signal">tor</field>
+        </record>
+
+        <record model="workflow.transition" id="project_tor_to_accept">
+            <field name="act_from" ref="tor"/>
+            <field name="act_to" ref="accept"/>
+            <field name="signal">accept</field>
+        </record>
+
+        <record model="workflow.transition" id="project_accept_to_contract">
+            <field name="act_from" ref="accept"/>
+            <field name="act_to" ref="contract"/>
+            <field name="signal">contract</field>
+        </record>
+
+        <record model="workflow.transition" id="project_contract_to_operation">
+            <field name="act_from" ref="contract"/>
+            <field name="act_to" ref="operation"/>
+            <field name="signal">operation</field>
+        </record>
+
+        <record model="workflow.transition" id="project_operation_to_progress">
+            <field name="act_from" ref="operation"/>
+            <field name="act_to" ref="progress"/>
+            <field name="signal">progress</field>
+        </record>
+
+        <record model="workflow.transition" id="project_progress_to_finish">
+            <field name="act_from" ref="progress"/>
+            <field name="act_to" ref="finish"/>
+            <field name="signal">finish</field>
+        </record>
+
+    </data>
+</openerp>
