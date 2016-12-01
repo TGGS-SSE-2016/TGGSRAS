@@ -6,7 +6,7 @@ class TggsrasCostcollection(models.Model):
     _name = 'tggsras.costcollection'
 
     company = fields.Many2one(
-            'res.partner', ondelete='set null', string="Company", index=True)
+            'res.partner', ondelete='set null', string="Company", index=True, required=True)
 
     invoicedate = fields.Date(
         string="Invoice Date", default=fields.Date.today)
@@ -16,6 +16,8 @@ class TggsrasCostcollection(models.Model):
 
     cost  = fields.Integer(
         string="Cost(Baht)", help="Fill cost of renting")
+
+    name = fields.Char(string="Name", compute='_gen_name')
 
     state = fields.Selection([
         ('invoice', "Invoice"),
@@ -45,3 +47,8 @@ class TggsrasCostcollection(models.Model):
     @api.multi
     def action_close(self):
         self.state = 'close'
+
+    @api.depends('company', 'invoicedate')
+    def _gen_name(self):
+        for r in self:
+            r.name = r.invoicedate+'-'+r.company

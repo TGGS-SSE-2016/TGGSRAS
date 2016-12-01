@@ -6,7 +6,7 @@
             <field name="objective">Create and develop finger scan systerm</field>
             <field name="scope">Find finger scan solution</field>
             <field name="description">This project will start with finger analysis</field>
-            <field name="expectedResult">Full system sync with old system</field>
+            <field name="expected_result">Full system sync with old system</field>
         </record>
     </data>
 </openerp>

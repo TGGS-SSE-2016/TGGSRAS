@@ -114,6 +114,7 @@
         <record model="workflow.activity" id="finish">
             <field name="name">Finish</field>
             <field name="wkf_id" ref="wkf_ras_project"/>
+            <field name="flow_stop">True</field>
             <field name="kind">dummy</field>
             <field name="action"></field>
             <field name="action_id" ref="set_project_to_finish"/>

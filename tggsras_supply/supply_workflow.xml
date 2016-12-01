@@ -82,6 +82,7 @@
         <record model="workflow.activity" id="supply_close">
             <field name="name">Supply Close</field>
             <field name="wkf_id" ref="wkf_ras_supply"/>
+            <field name="flow_stop">True</field>
             <field name="kind">dummy</field>
             <field name="action"></field>
             <field name="action_id" ref="set_supply_to_close"/>
