@@ -35,13 +35,13 @@
             </field>
         </record>
 
-        <record model="ir.ui.view" id="tggsras_project_tree">
+        <record model="ir.ui.view" id="tggsras_building_tree">
             <field name="name">tggsras.building.tree</field>
             <field name="model">tggsras.building</field>
             <field name="arch" type="xml">
                 <tree string="Building Cost List">
                     <field name="company"/>
-                    <field name="billdate"/>                    
+                    <field name="billdate"/>
                     <field name="state"/>
                 </tree>
             </field>

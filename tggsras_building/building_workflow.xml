@@ -14,8 +14,8 @@
             </field>
         </record>
 
-        <record model="workflow.activity" id="invoice">
-            <field name="name">Invoice</field>
+        <record model="workflow.activity" id="building_invoice">
+            <field name="name">Building Invoice</field>
             <field name="wkf_id" ref="wkf_ras_building"/>
             <field name="flow_start" eval="True"/>
             <field name="kind">dummy</field>
@@ -31,8 +31,8 @@
             </field>
         </record>
 
-        <record model="workflow.activity" id="send">
-            <field name="name">Send</field>
+        <record model="workflow.activity" id="building_send">
+            <field name="name">Building Send</field>
             <field name="wkf_id" ref="wkf_ras_building"/>
             <field name="kind">dummy</field>
             <field name="action"></field>
@@ -47,8 +47,8 @@
             </field>
         </record>
 
-        <record model="workflow.activity" id="paid">
-            <field name="name">Paid</field>
+        <record model="workflow.activity" id="building_paid">
+            <field name="name">Building Paid</field>
             <field name="wkf_id" ref="wkf_ras_building"/>
             <field name="kind">dummy</field>
             <field name="action"></field>
@@ -63,8 +63,8 @@
             </field>
         </record>
 
-        <record model="workflow.activity" id="bill">
-            <field name="name">Paid</field>
+        <record model="workflow.activity" id="building_bill">
+            <field name="name">Building Bill</field>
             <field name="wkf_id" ref="wkf_ras_building"/>
             <field name="kind">dummy</field>
             <field name="action"></field>
@@ -79,8 +79,8 @@
             </field>
         </record>
 
-        <record model="workflow.activity" id="close">
-            <field name="name">Close</field>
+        <record model="workflow.activity" id="building_close">
+            <field name="name">Building Close</field>
             <field name="wkf_id" ref="wkf_ras_building"/>
             <field name="kind">dummy</field>
             <field name="action"></field>
@@ -88,29 +88,27 @@
         </record>
 
         <record model="workflow.transition" id="building_invoice_to_send">
-            <field name="act_from" ref="invoice"/>
-            <field name="act_to" ref="send"/>
+            <field name="act_from" ref="building_invoice"/>
+            <field name="act_to" ref="building_send"/>
             <field name="signal">send</field>
         </record>
 
         <record model="workflow.transition" id="building_send_to_paid">
-            <field name="act_from" ref="send"/>
-            <field name="act_to" ref="paid"/>
+            <field name="act_from" ref="building_send"/>
+            <field name="act_to" ref="building_paid"/>
             <field name="signal">paid</field>
         </record>
 
         <record model="workflow.transition" id="building_paid_to_bill">
-            <field name="act_from" ref="paid"/>
-            <field name="act_to" ref="bill"/>
+            <field name="act_from" ref="building_paid"/>
+            <field name="act_to" ref="building_bill"/>
             <field name="signal">bill</field>
         </record>
 
         <record model="workflow.transition" id="building_bill_to_close">
-            <field name="act_from" ref="bill"/>
-            <field name="act_to" ref="close"/>
+            <field name="act_from" ref="building_bill"/>
+            <field name="act_to" ref="building_close"/>
             <field name="signal">close</field>
         </record>
-
-
     </data>
 </openerp>
