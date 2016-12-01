@@ -1,8 +1,8 @@
 <openerp>
     <data>
-        <record model="ir.actions.act_window" id="tggsras_building_list">
-            <field name="name">Building Cost</field>
-            <field name="res_model">tggsras.building</field>
+        <record model="ir.actions.act_window" id="tggsras_supply_list">
+            <field name="name">Supply Cost</field>
+            <field name="res_model">tggsras.supply</field>
             <field name="view_type">form</field>
             <field name="view_mode">form,tree</field>
             <field name="help" type="html">
@@ -11,11 +11,11 @@
             </field>
         </record>
 
-        <record model="ir.ui.view" id="tggsras_building_form">
-            <field name="name">tggsras.building.form</field>
-            <field name="model">tggsras.building</field>
+        <record model="ir.ui.view" id="tggsras_supply_form">
+            <field name="name">tggsras.supply.form</field>
+            <field name="model">tggsras.supply</field>
             <field name="arch" type="xml">
-                <form string="Building Cost Form">
+                <form string="Supply Cost Form">
                     <header>
                         <button name="send" type="workflow" string="Send Invoice" states="invoice" class=""/>
                         <button name="paid" type="workflow" string="Customer Paid" states="send" class=""/>
@@ -36,12 +36,12 @@
         </record>
 
         <record model="ir.ui.view" id="tggsras_project_tree">
-            <field name="name">tggsras.building.tree</field>
-            <field name="model">tggsras.building</field>
+            <field name="name">tggsras.supply.tree</field>
+            <field name="model">tggsras.supply</field>
             <field name="arch" type="xml">
-                <tree string="Building Cost List">
+                <tree string="Supply Cost List">
                     <field name="company"/>
-                    <field name="billdate"/>                    
+                    <field name="billdate"/>
                     <field name="state"/>
                 </tree>
             </field>

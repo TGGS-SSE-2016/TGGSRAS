@@ -25,7 +25,9 @@
         'tggsras_project/tggsras_project.xml',
         'tggsras_project/project_workflow.xml',
         'tggsras_building/tggsras_building.xml',
+        'tggsras_building/building_workflow.xml',
         'tggsras_supply/tggsras_supply.xml',
+        'tggsras_supply/supply_workflow.xml',
         'menu/tggsras_menu.xml'
     ],
     # only loaded in demonstration mode

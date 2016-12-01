@@ -1,0 +1,116 @@
+<openerp>
+    <data>
+      <record model="workflow" id="wkf_ras_building">
+            <field name="name">TGGS RAS building workflow</field>
+            <field name="osv">tggsras.building</field>
+            <field name="on_create">True</field>
+        </record>
+
+        <record model="ir.actions.server" id="set_building_to_invoice">
+            <field name="name">Set RAS building to invoice</field>
+            <field name="model_id" ref="model_tggsras_building"/>
+            <field name="code">
+                model.search([('id', 'in', context['active_ids'])]).action_invoice()
+            </field>
+        </record>
+
+        <record model="workflow.activity" id="invoice">
+            <field name="name">Invoice</field>
+            <field name="wkf_id" ref="wkf_ras_building"/>
+            <field name="flow_start" eval="True"/>
+            <field name="kind">dummy</field>
+            <field name="action"></field>
+            <field name="action_id" ref="set_building_to_invoice"/>
+        </record>
+
+        <record model="ir.actions.server" id="set_building_to_send">
+            <field name="name">Set RAS building to send</field>
+            <field name="model_id" ref="model_tggsras_building"/>
+            <field name="code">
+                model.search([('id', 'in', context['active_ids'])]).action_send()
+            </field>
+        </record>
+
+        <record model="workflow.activity" id="send">
+            <field name="name">Send</field>
+            <field name="wkf_id" ref="wkf_ras_building"/>
+            <field name="kind">dummy</field>
+            <field name="action"></field>
+            <field name="action_id" ref="set_building_to_send"/>
+        </record>
+
+        <record model="ir.actions.server" id="set_building_to_paid">
+            <field name="name">Set RAS building paid</field>
+            <field name="model_id" ref="model_tggsras_building"/>
+            <field name="code">
+                model.search([('id', 'in', context['active_ids'])]).action_paid()
+            </field>
+        </record>
+
+        <record model="workflow.activity" id="paid">
+            <field name="name">Paid</field>
+            <field name="wkf_id" ref="wkf_ras_building"/>
+            <field name="kind">dummy</field>
+            <field name="action"></field>
+            <field name="action_id" ref="set_building_to_paid"/>
+        </record>
+
+        <record model="ir.actions.server" id="set_building_to_bill">
+            <field name="name">Set RAS building bill</field>
+            <field name="model_id" ref="model_tggsras_building"/>
+            <field name="code">
+                model.search([('id', 'in', context['active_ids'])]).action_bill()
+            </field>
+        </record>
+
+        <record model="workflow.activity" id="bill">
+            <field name="name">Paid</field>
+            <field name="wkf_id" ref="wkf_ras_building"/>
+            <field name="kind">dummy</field>
+            <field name="action"></field>
+            <field name="action_id" ref="set_building_to_bill"/>
+        </record>
+
+        <record model="ir.actions.server" id="set_building_to_close">
+            <field name="name">Set RAS building close</field>
+            <field name="model_id" ref="model_tggsras_building"/>
+            <field name="code">
+                model.search([('id', 'in', context['active_ids'])]).action_close()
+            </field>
+        </record>
+
+        <record model="workflow.activity" id="close">
+            <field name="name">Close</field>
+            <field name="wkf_id" ref="wkf_ras_building"/>
+            <field name="kind">dummy</field>
+            <field name="action"></field>
+            <field name="action_id" ref="set_building_to_close"/>
+        </record>
+
+        <record model="workflow.transition" id="building_invoice_to_send">
+            <field name="act_from" ref="invoice"/>
+            <field name="act_to" ref="send"/>
+            <field name="signal">send</field>
+        </record>
+
+        <record model="workflow.transition" id="building_send_to_paid">
+            <field name="act_from" ref="send"/>
+            <field name="act_to" ref="paid"/>
+            <field name="signal">paid</field>
+        </record>
+
+        <record model="workflow.transition" id="building_paid_to_bill">
+            <field name="act_from" ref="paid"/>
+            <field name="act_to" ref="bill"/>
+            <field name="signal">bill</field>
+        </record>
+
+        <record model="workflow.transition" id="building_bill_to_close">
+            <field name="act_from" ref="bill"/>
+            <field name="act_to" ref="close"/>
+            <field name="signal">close</field>
+        </record>
+
+
+    </data>
+</openerp>
