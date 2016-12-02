@@ -4,7 +4,7 @@
     <data>
         <menuitem id="tggsras_main_menu" name="TGGS RAS"/>
         <menuitem id="tggsras_project_menu" name="Project" parent="tggsras_main_menu"/>
-        <menuitem id="tggsras_project" name="Create New Project" parent="tggsras_project_menu" action="tggsras_project_start_list"/>
+        <menuitem id="tggsras_project" name="Create or View Project" parent="tggsras_project_menu" action="tggsras_project_start_list"/>
         <menuitem id="tggsras_facility_menu" name="Facility" parent="tggsras_main_menu"/>
         <menuitem id="tggsras_building" name="Building Cost" parent="tggsras_facility_menu" action="tggsras_building_list"/>
         <menuitem id="tggsras_supply" name="Supply Cost" parent="tggsras_facility_menu" action="tggsras_supply_list"/>

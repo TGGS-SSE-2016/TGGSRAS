@@ -40,6 +40,17 @@ class TggsrasProject(models.Model):
     scope = fields.Text()
     description = fields.Text()
     expected_result = fields.Text()
+
+    _sql_constraints = [
+        ('name_description_check',
+         'CHECK(name != description)',
+         "The name of the project should not be the description"),
+
+        ('name_unique',
+         'UNIQUE(name)',
+         "The project name must be unique"),
+     ]
+
     state = fields.Selection([
         ('draft', "Draft"),
         ('tor', "TOR"),
@@ -77,3 +88,19 @@ class TggsrasProject(models.Model):
     @api.multi
     def action_finish(self):
         self.state = 'finish'
+
+    @api.onchange('expect_startdate', 'expect_enddate')
+    def _startdate_before(self):
+        fmt = '%Y-%m-%d'
+        start = self.expect_startdate
+        end = self.expect_enddate
+        d1 = datetime.strptime(start, fmt)
+        d2 = datetime.strptime(end, fmt)
+        dayDiff = (d2-d1).days
+        if dayDiff < 0:
+            return {
+                'warning': {
+                    'title': _("Start Date should before End Date"),
+                    'message': _("Your date Duration is : "+str(dayDiff)),
+                },
+            }
