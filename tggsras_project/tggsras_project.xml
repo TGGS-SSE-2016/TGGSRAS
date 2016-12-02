@@ -66,22 +66,22 @@
 
                             <page string="TOR">
                                 <field name="tor_filename" invisible="1"/>
-                                <field widget="binary" name="tor" filename="tor_filename"/>
+                                <field name="tor" filename="tor_filename"/>
                             </page>
 
                             <page string="Contract">
                                 <field name="contract_filename" invisible="1"/>
-                                <field widget="binary" name="contract" filename="contract_filename"/>
+                                <field name="contract" filename="contract_filename"/>
                             </page>
 
                             <page string="Permission">
                                 <field name="permission_filename" invisible="1"/>
-                                <field widget="binary" name="permission" filename="permission_filename"/>
+                                <field name="permission" filename="permission_filename"/>
                             </page>
 
                             <page string="Project Proposal">
                                 <field name="project_proposal_filename" invisible="1"/>
-                                <field widget="binary" name="project_proposal" filename="project_proposal_filename"/>
+                                <field name="project_proposal" filename="project_proposal_filename"/>
                             </page>
                         </notebook>
                     </sheet>
