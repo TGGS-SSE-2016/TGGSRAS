@@ -23,12 +23,15 @@
         'security/ir.model.access.csv',
         'security/tggsras_security.xml',
         'tggsras_project/tggsras_project.xml',
-        'tggsras_project/project_workflow.xml',        
+        'tggsras_project/project_workflow.xml',
         'tggsras_building/tggsras_building.xml',
         'tggsras_building/building_workflow.xml',
         'tggsras_supply/tggsras_supply.xml',
         'tggsras_supply/supply_workflow.xml',
-        'menu/tggsras_menu.xml'
+        'menu/tggsras_menu.xml',
+        'report/tggsras_building/invoice.xml',
+        'report/tggsras_project/proposal.xml',
+        'report/tggsras_supply/invoice.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

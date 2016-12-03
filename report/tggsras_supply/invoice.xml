@@ -1,0 +1,23 @@
+<openerp>
+<data>
+    <report
+        id="report_supply_invoice"
+        model="tggsras.supply"
+        string="Supply Invoice"
+        name="tggsras.report_supply_invoice_view"
+        file="tggsras.report_supply_invoice_file"
+        report_type="qweb-pdf" />
+
+    <template id="report_supply_invoice_view">
+        <t t-call="report.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="report.external_layout">
+                    <div class="page">
+                        <h2 t-field="doc.name"/>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</data>
+</openerp>

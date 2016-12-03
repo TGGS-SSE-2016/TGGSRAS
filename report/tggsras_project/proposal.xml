@@ -1,0 +1,23 @@
+<openerp>
+<data>
+    <report
+        id="report_project"
+        model="tggsras.project"
+        string="Project Report"
+        name="tggsras.report_project_view"
+        file="tggsras.report_project_file"
+        report_type="qweb-pdf" />
+
+    <template id="report_project_view">
+        <t t-call="report.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="report.external_layout">
+                    <div class="page">
+                        <h2 t-field="doc.name"/>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</data>
+</openerp>
