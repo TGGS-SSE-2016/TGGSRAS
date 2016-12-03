@@ -17,5 +17,5 @@
 ### Features
 - [ ] Add Email Notification
 - [ ] Add Security Rules
-- [ ] Add scroll bar in tree view
 - [ ] Add condition to pass flow
+- [ ] Add facility detect same year and month.
