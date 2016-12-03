@@ -23,7 +23,7 @@
         'security/ir.model.access.csv',
         'security/tggsras_security.xml',
         'tggsras_project/tggsras_project.xml',
-        'tggsras_project/project_workflow.xml',
+        'tggsras_project/project_workflow.xml',        
         'tggsras_building/tggsras_building.xml',
         'tggsras_building/building_workflow.xml',
         'tggsras_supply/tggsras_supply.xml',

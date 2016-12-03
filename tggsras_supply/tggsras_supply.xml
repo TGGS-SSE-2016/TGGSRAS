@@ -30,6 +30,19 @@
                             <field name="billdate"/>
                             <field name="cost"/>
                         </group>
+                        <notebook>
+
+                          <page string="Signed Invoice">
+                            <field name="signedinvoice_filename" invisible="1"/>
+                            <field name="signedinvoice" filename="signedinvoice_filename"/>
+                          </page>
+
+                          <page string="Signed Bill">
+                            <field name="signed_bill_filename" invisible="1"/>
+                            <field name="signedbill" filename="signed_bill_filename"/>
+                          </page>
+
+                        </notebook>
                     </sheet>
                 </form>
             </field>
@@ -40,8 +53,10 @@
             <field name="model">tggsras.supply</field>
             <field name="arch" type="xml">
                 <tree string="Supply Cost List">
+                    <field name="name"/>
                     <field name="company"/>
                     <field name="billdate"/>
+                    <field name="invoicemonth"/>
                     <field name="state"/>
                 </tree>
             </field>

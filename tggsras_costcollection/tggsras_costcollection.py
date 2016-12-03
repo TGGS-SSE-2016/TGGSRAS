@@ -12,13 +12,23 @@ class TggsrasCostcollection(models.Model):
     invoicedate = fields.Date(
         string="Invoice Date", default=fields.Date.today)
 
+    invoicemonth = fields.Integer(string="Month",compute='_get_month')
+
     billdate = fields.Date(
         string="Bill Date", default=fields.Date.today)
 
     cost  = fields.Integer(
         string="Cost(Baht)", help="Fill cost of renting")
 
-    name = fields.Char(string="Name", compute='_gen_name')
+    name = fields.Char(string="Name", compute='_gen_name', store=True)
+
+    signedinvoice = fields.Binary(string="Signed Invoice file",help="Upload signed invoice file here")
+
+    signedinvoice_filename = fields.Char(string="Signed Invoice file name")
+
+    signedbill = fields.Binary(string="Signed Bill file",help="Upload signed bill file here")
+
+    signed_bill_filename = fields.Char(string="Signed Bill file name")
 
     state = fields.Selection([
         ('invoice', "Invoice"),
@@ -55,3 +65,17 @@ class TggsrasCostcollection(models.Model):
             my_date = parser.parse(r.invoicedate)
             proper_date_string = my_date.strftime('%Y%m%d')
             r.name = proper_date_string+str(r.company.id)
+    def _get_month(self):
+        for r in self:
+            fmt = '%Y-%m-%d'
+            d = datetime.strptime(r.invoicedate, fmt)
+            r.invoicemonth = d.month
+
+    @api.constrains('name','company','invoicemonth')
+    def _check_unique_name(self):
+        for r in self:
+            name_check = len(self.search([('name', '=', r.name)]))
+            company_check = len(self.search([('company', '=', r.company.id)]))
+            month_check = len(self.search([('invoicemonth','=', r.invoicemonth)]))
+            if (name_check > 1) and (company_check > 1) and (month_check > 1):
+                raise exceptions.ValidationError("Company/Name/Month already exists and violates unique field constraint")

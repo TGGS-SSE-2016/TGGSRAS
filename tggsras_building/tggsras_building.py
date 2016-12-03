@@ -6,6 +6,7 @@ from openerp import models, fields, api, exceptions, _
 class TggsrasBuilding(models.Model):
     _name = 'tggsras.building'
     _inherit = 'tggsras.costcollection'
+
     @api.depends('company', 'invoicedate')
     def _gen_name(self):
         for r in self:

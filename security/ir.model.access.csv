@@ -1,2 +1,4 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
-ras_Manager,RAS Manager,model_tggsras_project,,1,1,1,1
+ras_manager,RAS Manager,model_tggsras_project,,1,1,1,1
+ras_manager,RAS Manager,model_tggsras_building,,1,1,1,1
+ras_manager,RAS Manager,model_tggsras_supply,,1,1,1,1
