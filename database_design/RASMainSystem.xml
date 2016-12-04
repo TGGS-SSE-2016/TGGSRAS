@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project Author="User" CommentTableSortAscending="false" CommentTableSortColumn="Date Time" Description="&lt;html&gt;&#13;&#10;  &lt;head&gt;&#13;&#10;    &lt;style type=&quot;text/css&quot;&gt;&#10;      &lt;!--&#10;        body { color: #000000; font-family: Dialog; font-size: 11px }&#10;      --&gt;&#10;    &lt;/style&gt;&#13;&#10;    &#13;&#10;  &lt;/head&gt;&#13;&#10;  &lt;body&gt;&#13;&#10;  &lt;/body&gt;&#13;&#10;&lt;/html&gt;&#13;&#10;" DocumentationType="html" ExportedFromDifferentName="false" ExporterVersion="12.2" Name="Database" TextualAnalysisHighlightOptionCaseSensitive="false" UmlVersion="2.x" Xml_structure="simple">
+	<ProjectInfo>
+		<OrmInfo DefaultDatabase="0" SupportDatabases="0"/>
+		<LogicalView/>
+		<ProjectOptions>
+			<DiagramOptions ActivityDiagramControlFlowDisplayOption="\u0000" ActivityDiagramShowActionCallBehaviorOption="\u0000" ActivityDiagramShowActivityEdgeWeight="true" ActivityDiagramShowObjectNodeType="true" ActivityDiagramShowPartitionHandle="\u0000" AddDataStoresExtEntitiesToDecomposedDFD="\u0002" AlignColumnProperties="true" AllowConfigShowInOutFlowButtonsInDataFlowDiagram="false" AutoGenerateRoleName="false" AutoSetAttributeType="true" AutoSetColumnType="false" AutoSyncRoleName="true" BpdAutoStretchPools="true" BpdConnectGatewayWithFlowObjectInDifferentPool="\u0000" BpdDefaultConnectionPointStyle="\u0001" BpdDefaultConnectorStyle="\u0005" BpdDhowIdOption="\u0000" BpdShowActivitiesTypeIcon="true" BusinessProcessDiagramDefaultLanguage="English" ClassVisibilityStyle="\u0001" ConnectorLabelOrientation="\u0000" CreateOneMessagePerDirection="true" DecisionMergeNodeConnectionPointStyle="\u0000" DefaultAssociationEndNavigable="\u0001" DefaultAssociationEndVisibility="\u0000" DefaultAssociationShowFromMultiplicity="true" DefaultAssociationShowFromRoleName="true" DefaultAssociationShowFromRoleVisibility="true" DefaultAssociationShowStereotypes="true" DefaultAssociationShowToMultiplicity="true" DefaultAssociationShowToRoleName="true" DefaultAssociationShowToRoleVisibility="true" DefaultAttributeMultiplicity="false" DefaultAttributeType="" DefaultAttributeVisibility="\u0001" DefaultClassAttributeMultiplicity="" DefaultClassAttributeMultiplicityOrdered="false" DefaultClassAttributeMultiplicityUnique="true" DefaultClassInterfaceBall="false" DefaultClassVisibility="\u0004" DefaultColumnType="integer(10)" DefaultConnectionPointStyle="\u0000" DefaultConnectorStyle="\u0001" DefaultDiagramBackground="rgb(255, 255, 255)" DefaultDisplayAsRobustnessAnalysisIcon="true" DefaultDisplayAsRobustnessAnalysisIconInSequenceDiagram="true" DefaultDisplayAsStereotypeIcon="false" DefaultFontColor="rgb(0, 0, 0)" DefaultGenDiagramTypeFromScenario="\u0000" DefaultHtmlDocFontColor="rgb(0, 0, 0)" DefaultLineJumps="\u0000" DefaultOperationVisibility="\u0004" DefaultParameterDirection="\u0002" DefaultShowAttributeInitialValue="true" DefaultShowAttributeOption="\u0001" DefaultShowClassMemberStereotype="true" DefaultShowDirection="false" DefaultShowMultiplicityConstraints="false" DefaultShowOperationOption="\u0001" DefaultShowOperationSignature="true" DefaultShowOrderedMultiplicityConstraint="false" DefaultShowOwnedAssociationEndAsAttribute="true" DefaultShowOwner="false" DefaultShowTemplateParameter="true" DefaultShowTypeOption="\u0001" DefaultShowUniqueMultiplicityConstraint="false" DefaultTypeOfSubProcess="\u0000" DefaultWrapClassMember="false" DrawTextAnnotationOpenRectangleFollowConnectorEnd="true" EnableMinimumSize="true" EntityColumnConstraintsPresentation="\u0002" ErdIndexNumOfDigits="-1" ErdIndexPattern="{table_name}" ErdIndexPatternSyncAutomatically="true" ErdManyToManyJoinTableDelimiter="_" ExpandedSubProcessDiagramContent="\u0001" ForeignKeyArrowHeadSize="\u0002" ForeignKeyConnectorEndPointAssociatedColumn="false" ForeignKeyNamePattern="{reference_table_name}{reference_column_name}" ForeignKeyNamePatternCaseHandling="0" ForeignKeyRelationshipPattern="{association_name}" FractionalMetrics="true" GeneralizationSetNotation="\u0001" GraphicAntiAliasing="true" GridDiagramFontSize="14" LineJumpSize="\u0000" ModelElementNameAlignment="\u0004" MultipleLineClassName="\u0001" PaintConnectorThroughLabel="false" PointConnectorEndToCompartmentMember="true" PrimaryKeyConstraintPattern="" PrimaryKeyNamePattern="ID" RenameConstructorAfterRenameClass="\u0000" RenameExtensionPointToFollowExtendUseCase="\u0000" ShapeAutoFitSize="false" ShowActivationsInSequenceDiagram="true" ShowActivityStateNodeCaption="65535" ShowArtifactOption="\u0002" ShowAssociatedDiagramNameOfInteraction="false" ShowAssociationRoleStereotypes="true" ShowAttributeGetterSetter="false" ShowClassEmptyCompartments="false" ShowColumnNullable="true" ShowColumnType="true" ShowColumnUniqueConstraintName="false" ShowComponentOption="\u0002" ShowExtraColumnProperties="true" ShowInOutFlowButtonsInDataFlowDiagram="false" ShowInOutFlowsInSubLevelDiagram="true" ShowMessageOperationSignatureForSequenceAndCommunicationDiagram="true" ShowMessageStereotypeInSequenceAndCommunicationDiagram="true" ShowNumberInCollaborationDiagram="true" ShowNumberInSequenceDiagram="true" ShowPackageNameStyle="\u0000" ShowParameterNameInOperationSignature="true" ShowRowGridLineWithinCompClassDiagram="false" ShowRowGridLineWithinCompERD="true" ShowRowGridLineWithinORMDiagram="true" ShowSchemaNameInERD="true" ShowTransitionTrigger="\u0000" ShowUseCaseExtensionPoint="true" ShowUseCaseID="false" StateShowPrePostConditionAndBodyOfInternalActivities="true" StopTargetLifelineOnCreateDestroyMessage="\u0002" SupportHtmlTaggedValue="false" SupportMultipleLineAttribute="true" SuppressImpliedMultiplicityForAttributeAssociationEnd="false" SyncAssociationNameWithAssociationClass="\u0000" SyncAssociationRoleNameWithReferencedAttributeName="true" SyncDocOfInterfaceToSubClass="\u0000" TextAntiAliasing="true" TextualAnalysisGenerateRequirementTextOption="\u0001" TextualAnalysisHighlightOption="\u0000" UnnamedIndexPattern="{table_name}_{column_name}" UseStateNameTab="false">
+				<DefaultHtmlDocFont Family="Dialog" Size="11" Style="0"/>
+			</DiagramOptions>
+			<GeneralOptions ConfirmSubLevelIdWithDot="true"/>
+			<InstantReverseOptions CalculateGeneralizationAndRealization="false" CreateShapeForParentModelOfDraggedClassPackage="false" ReverseGetterSetter="\u0000" ReverseOperationImplementation="false" ShowPackageForNewDiagram="\u0001" ShowPackageOwner="\u0000"/>
+			<ModelQualityOptions EnableModelQualityChecking="false"/>
+			<ORMOptions DecimalPrecision="19" DecimalScale="0" ExportCommentToDatabase="true" FormattedSQL="false" GenerateAssociationWithAttribute="false" GenerateDiagramFromORMWizards="true" GetterSetterVisibility="\u0000" IdGeneratorType="native" MappingFileColumnOrder="\u0000" NumericToClassType="\u0000" QuoteSQLIdentifier="\u0000" RecreateShapeWhenSync="false" SyncToClassDiagramAttributeName="\u0001" SyncToClassDiagramAttributeNamePrefix="" SyncToClassDiagramAttributeNameSuffix="" SyncToClassDiagramClassName="\u0000" SyncToClassDiagramClassNamePrefix="" SyncToClassDiagramClassNameSuffix="" SyncToERDColumnName="\u0000" SyncToERDColumnNamePrefix="" SyncToERDColumnNameSuffix="" SyncToERDTableName="\u0004" SyncToERDTableNamePrefix="" SyncToERDTableNameSuffix="" SynchronizeDefaultValueToColumn="false" SynchronizeName="\u0002" TablePerSubclassFKMapping="\u0000" UpperCaseSQL="true" UseDefaultDecimal="true" WrappingServletRequest="\u0001"/>
+			<RequirementDiagramOptions DefaultWrapMember="false" ShowAttributes="\u0001" SupportHTMLAttribute="false"/>
+			<StateCodeEngineOptions AutoCreateInitialStateInStateDiagram="true" AutoCreateTransitionMethods="true" DefaultInitialStateLocationX="-1" DefaultInitialStateLocationY="-1" GenerateDebugMessage="false" GenerateSample="true" GenerateTryCatch="true" Language="\u0000" RegenerateTransitionMethods="false" SyncTransitionMethods="true"/>
+			<WarningOptions CreateORMClassInDefaultPackage="true"/>
+			<PORepository>
+				<POUserIDFormats>
+					<POUserIDFormat Digits="2" Guid="false" Id="LDHRg.qGAqDGAQvm" LastNumericValue="0" ModelType="BPMNElement" Prefix="BP" Suffix=""/>
+					<POUserIDFormat Digits="2" Guid="false" Id="rDHRg.qGAqDGAQvn" LastNumericValue="0" ModelType="Actor" Prefix="AC" Suffix=""/>
+					<POUserIDFormat Digits="2" Guid="false" Id="rDHRg.qGAqDGAQvo" LastNumericValue="0" ModelType="UseCase" Prefix="UC" Suffix=""/>
+					<POUserIDFormat Digits="3" Guid="false" Id="rDHRg.qGAqDGAQvp" LastNumericValue="0" ModelType="Requirement" Prefix="REQ" Suffix=""/>
+					<POUserIDFormat Digits="3" Guid="false" Id="rDHRg.qGAqDGAQvq" LastNumericValue="0" ModelType="BusinessRule" Prefix="BR" Suffix=""/>
+				</POUserIDFormats>
+			</PORepository>
+		</ProjectOptions>
+	</ProjectInfo>
+	<Models>
+		<DataType Documentation_plain="" Id="tlHRg.qGAqDGAQm5" Name="boolean" PmAuthor="User" PmCreateDateTime="2016-10-14T11:55:30.157" PmLastModified="2016-10-14T11:56:21.415" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DataType Documentation_plain="" Id="dlHRg.qGAqDGAQm6" Name="byte" PmAuthor="User" PmCreateDateTime="2016-10-14T11:55:30.158" PmLastModified="2016-10-14T11:56:21.329" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DataType Documentation_plain="" Id="9lHRg.qGAqDGAQm7" Name="char" PmAuthor="User" PmCreateDateTime="2016-10-14T11:55:30.159" PmLastModified="2016-10-14T11:56:21.378" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DataType Documentation_plain="" Id="9lHRg.qGAqDGAQm8" Name="double" PmAuthor="User" PmCreateDateTime="2016-10-14T11:55:30.159" PmLastModified="2016-10-14T11:56:21.378" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DataType Documentation_plain="" Id="9lHRg.qGAqDGAQm9" Name="float" PmAuthor="User" PmCreateDateTime="2016-10-14T11:55:30.159" PmLastModified="2016-10-14T11:56:21.378" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DataType Documentation_plain="" Id="DlHRg.qGAqDGAQm." Name="int" PmAuthor="User" PmCreateDateTime="2016-10-14T11:55:30.160" PmLastModified="2016-10-14T11:56:21.400" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DataType Documentation_plain="" Id="jlHRg.qGAqDGAQm_" Name="long" PmAuthor="User" PmCreateDateTime="2016-10-14T11:55:30.161" PmLastModified="2016-10-14T11:56:21.350" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DataType Documentation_plain="" Id="jlHRg.qGAqDGAQnA" Name="short" PmAuthor="User" PmCreateDateTime="2016-10-14T11:55:30.161" PmLastModified="2016-10-14T11:56:21.349" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DataType Documentation_plain="" Id="jlHRg.qGAqDGAQnB" Name="void" PmAuthor="User" PmCreateDateTime="2016-10-14T11:55:30.161" PmLastModified="2016-10-14T11:56:21.349" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<DataType Documentation_plain="" Id="TlHRg.qGAqDGAQnC" Name="string" PmAuthor="User" PmCreateDateTime="2016-10-14T11:55:30.162" PmLastModified="2016-10-14T11:56:21.368" QualityScore="-1" UserIDLastNumericValue="0"/>
+		<Stereotype Abstract="false" BaseType="Class" Documentation_plain="" IconPath="" Id="S_evg.qGAqDGARTH" Leaf="false" Name="ORM Persistable" PmAuthor="User" PmCreateDateTime="2016-08-29T09:58:57.573" PmLastModified="2016-10-14T13:51:53.064" QualityScore="-1" Root="false" UserIDLastNumericValue="0"/>
+		<DBTable ClassModel="gEhdmRqGAqDGAQed" DataModel="Physical" Documentation_plain="" Id="eneIQ.qGAqDGARj7" Name="RasProject" OrmSyncState="Not Sync" PmAuthor="User" PmCreateDateTime="2016-10-14T14:22:17.566" PmLastModified="2016-12-04T16:02:38.912" PrimaryKeyClustered="Unspecified" PrimaryKeyConstraintNamePattern="" QualityScore="-1" SyncType="Sync" Type="0" UserIDLastNumericValue="0">
+			<ModelChildren>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="6iL_ExqGAqDGAQX_" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="255" Name="name" Nullable="false" PmAuthor="User" PmCreateDateTime="2016-12-04T15:42:02.199" PmLastModified="2016-12-04T15:53:31.598" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="varchar" Type_internalValue="27" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="OvUgkxqGAqDGAQZO" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="255" Name="objective" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T15:47:57.276" PmLastModified="2016-12-04T15:53:14.583" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="varchar" Type_internalValue="27" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="CQsgkxqGAqDGAQZR" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="255" Name="scope" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T15:48:05.776" PmLastModified="2016-12-04T15:53:31.598" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="varchar" Type_internalValue="27" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="1wcgkxqGAqDGAQZU" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="255" Name="description" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T15:48:09.963" PmLastModified="2016-12-04T15:53:43.865" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="varchar" Type_internalValue="27" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="E5igkxqGAqDGAQZX" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="255" Name="expected_result" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T15:48:24.520" PmLastModified="2016-12-04T15:53:57.191" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="varchar" Type_internalValue="27" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="tDL_ExqGAqDGAQYJ" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="customer" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T15:42:04.205" PmLastModified="2016-12-04T15:54:30.718" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="9gIAkxqGAqDGAQYa" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="responsible" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T15:43:06.735" PmLastModified="2016-12-04T15:43:25.595" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="4MYAkxqGAqDGAQYd" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="0" Name="expect_startdate" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T15:43:15.591" PmLastModified="2016-12-04T15:54:42.993" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="date" Type_internalValue="17" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="RTXAkxqGAqDGAQYg" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="0" Name="expect_enddate" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T15:46:51.042" PmLastModified="2016-12-04T15:54:55.263" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="date" Type_internalValue="17" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="oJ_AkxqGAqDGAQYw" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="estimated_income" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T15:47:10.597" PmLastModified="2016-12-04T15:55:22.826" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="float" Type_internalValue="4" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="c3_AkxqGAqDGAQYz" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="estimated_expense" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T15:47:12.078" PmLastModified="2016-12-04T15:55:22.826" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="float" Type_internalValue="4" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="aUggkxqGAqDGAQY2" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="1000" Name="tor" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T15:47:17.142" PmLastModified="2016-12-04T15:55:50.322" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="binary" Type_internalValue="39" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="XyQgkxqGAqDGAQY5" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="255" Name="tor_filename" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T15:47:21.850" PmLastModified="2016-12-04T15:56:02.184" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="varchar" Type_internalValue="27" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="PDwgkxqGAqDGAQY8" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="1000" Name="contract" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T15:47:27.804" PmLastModified="2016-12-04T15:56:21.038" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="binary" Type_internalValue="39" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="FuogkxqGAqDGAQY_" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="255" Name="contract_filename" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T15:47:34.760" PmLastModified="2016-12-04T15:56:21.038" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="varchar" Type_internalValue="27" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="bxYgkxqGAqDGAQZC" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="1000" Name="permission" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T15:47:39.254" PmLastModified="2016-12-04T15:56:32.862" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="binary" Type_internalValue="39" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="vd4gkxqGAqDGAQZF" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="255" Name="permission_filename" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T15:47:44.061" PmLastModified="2016-12-04T15:56:55.665" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="varchar" Type_internalValue="27" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="HtEgkxqGAqDGAQZI" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="1000" Name="project_proposal" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T15:47:48.088" PmLastModified="2016-12-04T15:56:55.665" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="binary" Type_internalValue="39" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="77kgkxqGAqDGAQZL" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="255" Name="project_proposal_filename" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T15:47:52.823" PmLastModified="2016-12-04T15:56:55.665" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="varchar" Type_internalValue="27" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="2X2IkxqGAqDGAQd." IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="state" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T16:02:13.147" PmLastModified="2016-12-04T16:02:38.912" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0"/>
+			</ModelChildren>
+			<MasterView>
+				<DBTable Idref="tXeIQ.qGAqDGARko" Name="RasProject"/>
+			</MasterView>
+		</DBTable>
+		<DBTable ClassModel="ashdmRqGAqDGAQe9" DataModel="Physical" Documentation_plain="" Id="NneIQ.qGAqDGARkL" Name="RasFacility" OrmSyncState="Not Sync" PmAuthor="User" PmCreateDateTime="2016-10-14T14:22:17.580" PmLastModified="2016-12-04T16:02:38.909" PrimaryKeyClustered="Unspecified" PrimaryKeyConstraintNamePattern="" QualityScore="-1" SyncType="Sync" Type="0" UserIDLastNumericValue="0">
+			<ModelChildren>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="ziMIkxqGAqDGAQdM" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="name" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T16:01:09.107" PmLastModified="2016-12-04T16:01:51.829" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="ltMIkxqGAqDGAQdW" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="company" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T16:01:10.889" PmLastModified="2016-12-04T16:01:51.829" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="UDsIkxqGAqDGAQdZ" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="invoicedate" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T16:01:15.146" PmLastModified="2016-12-04T16:01:51.829" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="eF8IkxqGAqDGAQdc" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="invoicemonth" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T16:01:22.846" PmLastModified="2016-12-04T16:01:51.829" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="P9CIkxqGAqDGAQdf" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="billdate" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T16:01:27.420" PmLastModified="2016-12-04T16:01:51.830" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="KViIkxqGAqDGAQdi" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="cost" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T16:01:31.156" PmLastModified="2016-12-04T16:01:51.830" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="viSIkxqGAqDGAQdl" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="signedinvoice" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T16:01:33.693" PmLastModified="2016-12-04T16:01:51.830" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="AiKIkxqGAqDGAQdo" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="signedinvoice_filename" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T16:01:41.824" PmLastModified="2016-12-04T16:02:38.909" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="uL6IkxqGAqDGAQdv" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="signedbill" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T16:01:56.381" PmLastModified="2016-12-04T16:02:38.909" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="XgGIkxqGAqDGAQdy" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="signed_bill_filename" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T16:01:57.242" PmLastModified="2016-12-04T16:02:38.909" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0"/>
+				<DBColumn Documentation_plain="" Generated="Unspecified" Id="5ceIkxqGAqDGAQeK" IdGenerator="native" IdentityIncrement="-1" IdentitySeed="-1" Index="false" Length="10" Name="state" Nullable="true" PmAuthor="User" PmCreateDateTime="2016-12-04T16:02:22.631" PmLastModified="2016-12-04T16:02:38.909" PrimaryKey="false" QualityScore="-1" Scale="0" SequenceAllocationSize="-1" SyncToAttribute="Yes" SyncType="Not Sync" Type="integer" Type_internalValue="9" Unique="false" UserIDLastNumericValue="0"/>
+			</ModelChildren>
+			<MasterView>
+				<DBTable Idref="LXeIQ.qGAqDGARkr" Name="RasFacility"/>
+			</MasterView>
+		</DBTable>
+		<Class Abstract="false" Active="false" BusinessKeyMutable="true" BusinessModel="false" ConnectToCodeModel="1" Documentation_plain="" Id="gEhdmRqGAqDGAQed" Leaf="false" Name="RasProject" PmAuthor="User" PmCreateDateTime="2016-11-25T11:24:18.177" PmLastModified="2016-11-27T17:01:25.794" QualityScore="-1" Root="false" UserIDLastNumericValue="0" Visibility="public">
+			<OrmDetail>
+				<ORMClassDetail Cache="Disable" Id="RkhdmRqGAqDGAQee" InheritanceStrategy="Table per class hierarchy" Lazy="false" Name="" ReadOnly="false" Reference="false" TableModel="eneIQ.qGAqDGARj7"/>
+			</OrmDetail>
+			<Stereotypes>
+				<Stereotype Idref="S_evg.qGAqDGARTH" Name="ORM Persistable"/>
+			</Stereotypes>
+			<ModelChildren>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="H0hdmRqGAqDGAQef" IsID="false" Leaf="false" Multiplicity="1" Name="id" PmAuthor="User" PmCreateDateTime="2016-11-25T11:24:18.424" PmLastModified="2016-11-25T11:24:29.540" QualityScore="-1" ReadOnly="false" Scope="instance" UserIDLastNumericValue="0" Visibility="private" Visible="true">
+					<Type>
+						<DataType Idref="DlHRg.qGAqDGAQm." Name="int"/>
+					</Type>
+					<OrmDetail>
+						<ORMAttributeDetail Id="X0hdmRqGAqDGAQeg" Lazy="false" Name="" Persistable="Yes"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="3MhdmRqGAqDGAQeh" IsID="false" Leaf="false" Multiplicity="0..1" Name="createDate" PmAuthor="User" PmCreateDateTime="2016-11-25T11:24:18.491" PmLastModified="2016-11-25T11:24:29.540" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" UserIDLastNumericValue="0" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail Id="PMhdmRqGAqDGAQei" Lazy="false" Name="" Persistable="Yes"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="vMhdmRqGAqDGAQej" IsID="false" Leaf="false" Multiplicity="0..1" Name="updateDate" PmAuthor="User" PmCreateDateTime="2016-11-25T11:24:18.493" PmLastModified="2016-11-25T11:24:29.540" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" UserIDLastNumericValue="0" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail Id="fMhdmRqGAqDGAQek" Lazy="false" Name="" Persistable="Yes"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="fMhdmRqGAqDGAQel" IsID="false" Leaf="false" Multiplicity="0..1" Name="updateBy" PmAuthor="User" PmCreateDateTime="2016-11-25T11:24:18.494" PmLastModified="2016-11-25T11:24:29.540" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" UserIDLastNumericValue="0" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail Id="_MhdmRqGAqDGAQem" Lazy="false" Name="" Persistable="Yes"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="AshdmRqGAqDGAQen" IsID="false" Leaf="false" Multiplicity="0..1" Name="name" PmAuthor="User" PmCreateDateTime="2016-11-25T11:24:18.496" PmLastModified="2016-11-25T11:24:29.540" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" UserIDLastNumericValue="0" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail Id="QshdmRqGAqDGAQeo" Lazy="false" Name="" Persistable="Yes"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="QshdmRqGAqDGAQep" IsID="false" Leaf="false" Multiplicity="0..1" Name="proposal" PmAuthor="User" PmCreateDateTime="2016-11-25T11:24:18.498" PmLastModified="2016-11-25T11:24:29.540" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" UserIDLastNumericValue="0" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail Id="wshdmRqGAqDGAQeq" Lazy="false" Name="" Persistable="Yes"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="IshdmRqGAqDGAQer" IsID="false" Leaf="false" Multiplicity="0..1" Name="budget" PmAuthor="User" PmCreateDateTime="2016-11-25T11:24:18.500" PmLastModified="2016-11-25T11:24:29.540" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" UserIDLastNumericValue="0" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail Id="oshdmRqGAqDGAQes" Lazy="false" Name="" Persistable="Yes"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="oshdmRqGAqDGAQet" IsID="false" Leaf="false" Multiplicity="0..1" Name="budgetPeriod" PmAuthor="User" PmCreateDateTime="2016-11-25T11:24:18.501" PmLastModified="2016-11-25T11:24:29.540" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" UserIDLastNumericValue="0" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail Id="4shdmRqGAqDGAQeu" Lazy="false" Name="" Persistable="Yes"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="EshdmRqGAqDGAQev" IsID="false" Leaf="false" Multiplicity="0..1" Name="budgetAmount" PmAuthor="User" PmCreateDateTime="2016-11-25T11:24:18.504" PmLastModified="2016-11-25T11:24:29.540" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" UserIDLastNumericValue="0" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail Id="kshdmRqGAqDGAQew" Lazy="false" Name="" Persistable="Yes"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="kshdmRqGAqDGAQex" IsID="false" Leaf="false" Multiplicity="0..1" Name="tor" PmAuthor="User" PmCreateDateTime="2016-11-25T11:24:18.505" PmLastModified="2016-11-25T11:24:29.540" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" UserIDLastNumericValue="0" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail Id="UshdmRqGAqDGAQey" Lazy="false" Name="" Persistable="Yes"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="0shdmRqGAqDGAQez" IsID="false" Leaf="false" Multiplicity="0..1" Name="deliveryDate" PmAuthor="User" PmCreateDateTime="2016-11-25T11:24:18.507" PmLastModified="2016-11-25T11:24:29.540" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" UserIDLastNumericValue="0" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail Id="sshdmRqGAqDGAQe0" Lazy="false" Name="" Persistable="Yes"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="cshdmRqGAqDGAQe1" IsID="false" Leaf="false" Multiplicity="0..1" Name="contract" PmAuthor="User" PmCreateDateTime="2016-11-25T11:24:18.510" PmLastModified="2016-11-25T11:24:29.540" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" UserIDLastNumericValue="0" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail Id="8shdmRqGAqDGAQe2" Lazy="false" Name="" Persistable="Yes"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="CshdmRqGAqDGAQe3" IsID="false" Leaf="false" Multiplicity="0..1" Name="custormer" PmAuthor="User" PmCreateDateTime="2016-11-25T11:24:18.512" PmLastModified="2016-11-25T11:24:29.540" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" UserIDLastNumericValue="0" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail Id="ishdmRqGAqDGAQe4" Lazy="false" Name="" Persistable="Yes"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="ishdmRqGAqDGAQe5" IsID="false" Leaf="false" Multiplicity="0..1" Name="researcher" PmAuthor="User" PmCreateDateTime="2016-11-25T11:24:18.513" PmLastModified="2016-11-25T11:24:29.540" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" UserIDLastNumericValue="0" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail Id="KshdmRqGAqDGAQe6" Lazy="false" Name="" Persistable="Yes"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="KshdmRqGAqDGAQe7" IsID="false" Leaf="false" Multiplicity="0..1" Name="type" PmAuthor="User" PmCreateDateTime="2016-11-25T11:24:18.516" PmLastModified="2016-11-25T11:24:29.540" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" UserIDLastNumericValue="0" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail Id="qshdmRqGAqDGAQe8" Lazy="false" Name="" Persistable="Yes"/>
+					</OrmDetail>
+				</Attribute>
+			</ModelChildren>
+			<MasterView>
+				<Class Idref="a8hdmRqGAqDGAQgD" Name="RasProject"/>
+			</MasterView>
+		</Class>
+		<Class Abstract="false" Active="false" BusinessKeyMutable="true" BusinessModel="false" ConnectToCodeModel="1" Documentation_plain="" Id="ashdmRqGAqDGAQe9" Leaf="false" Name="RasFacility" PmAuthor="User" PmCreateDateTime="2016-11-25T11:24:18.518" PmLastModified="2016-12-04T16:00:48.539" QualityScore="-1" Root="false" UserIDLastNumericValue="0" Visibility="public">
+			<OrmDetail>
+				<ORMClassDetail Cache="Disable" Id="6shdmRqGAqDGAQe." InheritanceStrategy="Table per class hierarchy" Lazy="false" Name="" ReadOnly="false" Reference="false" TableModel="NneIQ.qGAqDGARkL"/>
+			</OrmDetail>
+			<Stereotypes>
+				<Stereotype Idref="S_evg.qGAqDGARTH" Name="ORM Persistable"/>
+			</Stereotypes>
+			<ModelChildren>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="mshdmRqGAqDGAQe_" IsID="false" Leaf="false" Multiplicity="1" Name="id" PmAuthor="User" PmCreateDateTime="2016-11-25T11:24:18.521" PmLastModified="2016-11-25T11:24:29.521" QualityScore="-1" ReadOnly="false" Scope="instance" UserIDLastNumericValue="0" Visibility="private" Visible="true">
+					<Type>
+						<DataType Idref="DlHRg.qGAqDGAQm." Name="int"/>
+					</Type>
+					<OrmDetail>
+						<ORMAttributeDetail Id="WshdmRqGAqDGAQfA" Lazy="false" Name="" Persistable="Yes"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="WshdmRqGAqDGAQfB" IsID="false" Leaf="false" Multiplicity="0..1" Name="createDate" PmAuthor="User" PmCreateDateTime="2016-11-25T11:24:18.522" PmLastModified="2016-11-25T11:24:29.521" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" UserIDLastNumericValue="0" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail Id="2shdmRqGAqDGAQfC" Lazy="false" Name="" Persistable="Yes"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="OshdmRqGAqDGAQfD" IsID="false" Leaf="false" Multiplicity="0..1" Name="updateDate" PmAuthor="User" PmCreateDateTime="2016-11-25T11:24:18.524" PmLastModified="2016-11-25T11:24:29.521" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" UserIDLastNumericValue="0" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail Id="ushdmRqGAqDGAQfE" Lazy="false" Name="" Persistable="Yes"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="ushdmRqGAqDGAQfF" IsID="false" Leaf="false" Multiplicity="0..1" Name="updateBy" PmAuthor="User" PmCreateDateTime="2016-11-25T11:24:18.525" PmLastModified="2016-11-25T11:24:29.521" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" UserIDLastNumericValue="0" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail Id="eshdmRqGAqDGAQfG" Lazy="false" Name="" Persistable="Yes"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id=".shdmRqGAqDGAQfH" IsID="false" Leaf="false" Multiplicity="0..1" Name="type" PmAuthor="User" PmCreateDateTime="2016-11-25T11:24:18.527" PmLastModified="2016-11-25T11:24:29.521" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" UserIDLastNumericValue="0" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail Id="BshdmRqGAqDGAQfI" Lazy="false" Name="" Persistable="Yes"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="BshdmRqGAqDGAQfJ" IsID="false" Leaf="false" Multiplicity="0..1" Name="customer" PmAuthor="User" PmCreateDateTime="2016-11-25T11:24:18.528" PmLastModified="2016-11-25T11:24:29.521" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" UserIDLastNumericValue="0" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail Id="hshdmRqGAqDGAQfK" Lazy="false" Name="" Persistable="Yes"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="RshdmRqGAqDGAQfL" IsID="false" Leaf="false" Multiplicity="0..1" Name="monthYear" PmAuthor="User" PmCreateDateTime="2016-11-25T11:24:18.530" PmLastModified="2016-11-25T11:24:29.521" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" UserIDLastNumericValue="0" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail Id="xshdmRqGAqDGAQfM" Lazy="false" Name="" Persistable="Yes"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="xshdmRqGAqDGAQfN" IsID="false" Leaf="false" Multiplicity="0..1" Name="amount" PmAuthor="User" PmCreateDateTime="2016-11-25T11:24:18.531" PmLastModified="2016-11-25T11:24:29.521" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" UserIDLastNumericValue="0" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail Id="JshdmRqGAqDGAQfO" Lazy="false" Name="" Persistable="Yes"/>
+					</OrmDetail>
+				</Attribute>
+				<Attribute Abstract="false" Aggregation="None" AllowEmptyName="false" ConnectToCodeModel="1" Derived="false" DerivedUnion="false" Documentation_plain="" HasGetter="false" HasSetter="false" Id="pshdmRqGAqDGAQfP" IsID="false" Leaf="false" Multiplicity="0..1" Name="invoice" PmAuthor="User" PmCreateDateTime="2016-11-25T11:24:18.533" PmLastModified="2016-11-25T11:24:29.521" QualityScore="-1" ReadOnly="false" Scope="instance" Type="Integer" UserIDLastNumericValue="0" Visibility="private" Visible="true">
+					<OrmDetail>
+						<ORMAttributeDetail Id="pshdmRqGAqDGAQfQ" Lazy="false" Name="" Persistable="Yes"/>
+					</OrmDetail>
+				</Attribute>
+			</ModelChildren>
+			<MasterView>
+				<Class Idref="QihdmRqGAqDGAQgG" Name="RasFacility"/>
+			</MasterView>
+		</Class>
+	</Models>
+	<Diagrams>
+		<ERDiagram AlignToGrid="false" AutoFitShapesSize="false" ConnectionPointStyle="0" ConnectorLabelOrientation="0" ConnectorLineJumps="0" ConnectorLineJumpsSize="0" ConnectorStyle="1" DataModel="2" DiagramBackground="rgb(255, 255, 255)" Editable="true" FollowDiagramParentElement="true" ForeignKeyArrowHeadSize="3" GridColor="rgb(192, 192, 192)" GridHeight="10" GridVisible="false" GridWidth="10" Height="604" HideEmptyTaggedValues="false" Id="q8Qfg.qGAqDGARUM" ImageHeight="0" ImageScale="1.0" ImageWidth="0" InitializeDiagramForCreate="true" Maximized="true" ModelElementNameAlignment="4" Name="RAS Main System" PaintConnectorThroughLabel="1" PmAuthor="User" PmCreateDateTime="2016-10-14T13:54:07.317" PmLastModified="2016-12-04T16:09:30.264" PointConnectorEndToCompartmentMember="true" QualityScore="-1" RequestValidateSnapToGrid="false" ShapePresentationOption="0" ShowActivityStateNodeCaption="65535" ShowAllocatedFrom="true" ShowAllocatedTo="true" ShowConnectorName="0" ShowConstraints="false" ShowDefaultPackage="false" ShowInformationItemOption="2" ShowPMAuthor="false" ShowPMDifficulty="false" ShowPMDiscipline="false" ShowPMIteration="false" ShowPMPhase="false" ShowPMPriority="false" ShowPMStatus="false" ShowPMVersion="false" ShowPackageNameStyle="0" ShowSchemaName="true" ShowShapeStereotypeIconName="true" ShowStereotypes="true" ShowTaggedValues="false" TeamworkCreateDateTime="0" TransitFrom="l__xg.qGAqDGAQvr" TrimmedHeight="0" TrimmedWidth="0" Width="1154" X="0" Y="0" ZoomRatio="1.1" _alignColumnProperties="true" _columnConstraintsDisplayOption="2" _globalPaletteOption="true" _pointForeignKeyEndToColumn="false" _showColumnStereotypes="true" _showColumnTypes="true" _showColumnUserType="false" _showDBTableColumnsMode="1" _showDBViewColumnsMode="1" _showExtraColumnProperties="true" _showProcedureStereotypes="true" _showStoredProcedureResultSetColumns="true" _showStoredProcedures="true" _showTriggerStereotypes="true" _showTriggers="true">
+			<Shapes>
+				<DBTable Background="rgb(122, 207, 245)" ColSortType="0" ConnectToPoint="false" ConnectionPointType="2" Foreground="rgb(0, 0, 0)" Height="220" Id="LXeIQ.qGAqDGARkr" MetaModelElement="NneIQ.qGAqDGARkL" Model="NneIQ.qGAqDGARkL" ModelElementNameAlignment="9" Name="RasFacility" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="0" ParentConnectorLineLength="0" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowColumnStereotypes="0" ShowColumnsMode="0" ShowStereotypeIconName="0" Width="232" X="354" Y="53" ZOrder="0">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="14" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="FreeMove" Visible="true" Width="232" X="0" Y="0"/>
+					<FillColor Color="rgb(245, 182, 122)" Style="1" Transparency="0" Type="1"/>
+					<CompartmentFont Value="none"/>
+				</DBTable>
+				<DBTable Background="rgb(122, 207, 245)" ColSortType="0" ConnectToPoint="false" ConnectionPointType="2" Foreground="rgb(0, 0, 0)" Height="400" Id="tXeIQ.qGAqDGARko" MetaModelElement="eneIQ.qGAqDGARj7" Model="eneIQ.qGAqDGARj7" ModelElementNameAlignment="9" Name="RasProject" OverrideAppearanceWithStereotypeIcon="true" ParentConnectorDTheta="0.0" ParentConnectorHeaderLength="0" ParentConnectorLineLength="0" PresentationOption="4" PrimitiveShapeType="0" RequestDefaultSize="false" RequestFitSize="false" RequestFitSizeFromCenter="false" RequestResetCaption="false" RequestResetCaptionFitWidth="false" RequestResetCaptionSize="false" RequestSetSizeOption="0" Selectable="true" ShowAllocatedFrom="0" ShowAllocatedTo="0" ShowColumnStereotypes="0" ShowColumnsMode="0" ShowStereotypeIconName="0" Width="258" X="70" Y="53" ZOrder="2">
+					<ElementFont Color="rgb(0, 0, 0)" Name="Dialog" Size="11" Style="0"/>
+					<Line Cap="0" Color="rgb(0, 0, 0)" Transparency="0" Weight="1.0">
+						<Stroke/>
+					</Line>
+					<Caption Height="14" InternalHeight="-2147483648" InternalWidth="-2147483648" Side="FreeMove" Visible="true" Width="258" X="0" Y="0"/>
+					<FillColor Color="rgb(245, 182, 122)" Style="1" Transparency="0" Type="1"/>
+					<CompartmentFont Value="none"/>
+				</DBTable>
+			</Shapes>
+		</ERDiagram>
+	</Diagrams>
+</Project>
