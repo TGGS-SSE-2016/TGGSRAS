@@ -41,16 +41,6 @@ class TggsrasProject(models.Model):
     description = fields.Text()
     expected_result = fields.Text()
 
-    _sql_constraints = [
-        ('name_description_check',
-         'CHECK(name != description)',
-         "The name of the project should not be the description"),
-
-        ('name_unique',
-         'UNIQUE(name)',
-         "The project name must be unique"),
-     ]
-
     state = fields.Selection([
         ('draft', "Draft"),
         ('tor', "TOR"),
@@ -60,6 +50,16 @@ class TggsrasProject(models.Model):
         ('progress', "Progress"),
         ('finish', "Finish"),
     ])
+
+    _sql_constraints = [
+        ('name_description_check',
+         'CHECK(name != description)',
+         "The name of the project should not be the description"),
+
+        ('name_unique',
+         'UNIQUE(name)',
+         "The project name must be unique"),
+     ]
 
     @api.multi
     def action_draft(self):
