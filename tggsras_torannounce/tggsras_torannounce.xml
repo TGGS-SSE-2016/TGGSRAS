@@ -11,15 +11,33 @@
           </field>
       </record>
 
-      <record model="ir.ui.view" id="tggsras_project_progress_tree">
+      <record model="ir.ui.view" id="tggsras_torannounce_tree">
           <field name="name">tggsras.torannounce.tree</field>
           <field name="model">tggsras.torannounce</field>
           <field name="arch" type="xml">
               <tree string="TOR Announcement List">
-                  <field name="project_id"/>
+                  <field name="name"/>
+                  <field name="fundowner"/>
                   <field name="duedate"/>
-                  <field name="state"/>
               </tree>
+          </field>
+      </record>
+
+      <record model="ir.ui.view" id="tggsras_torannounce_form">
+          <field name="name">tggsras.torannounce.form</field>
+          <field name="model">tggsras.torannounce</field>
+          <field name="arch" type="xml">
+              <form string="TOR Announcement Form">
+                <sheet>
+                  <group>
+                    <field name="name"/>
+                    <field name="fundowner"/>
+                    <field name="duedate"/>
+                    <field name="description"/>
+                    <field name="poster"/>
+                  </group>
+                </sheet>                  
+              </form>
           </field>
       </record>
 
