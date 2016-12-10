@@ -29,12 +29,13 @@
 - [ ] Add External Income
 - [ ] Change Field Name
 - [ ] Change TOR to CfP(Call for Proposal)
-- [ ] Add annouce action(Receive TOR to Annouce TOR)
+- [ ] Add announce action(Receive TOR to announce TOR)
 - [ ] Add different state transition button(eg. submit approval)
 - [ ] Change accept to Approved
 - [ ] Add action tool tips
 - [ ] Add file upload label
+- [ ] Add file upload model
 - [ ] Add progress report model one2many
-- [ ] Add TOR annoucement models(can be null in main project model) zero/one2many
+- [ ] Add TOR announcements models(can be null in main project model) zero/one2many
 - [ ] Fixed can not change project data after contract signed
 - [ ] Add reject action
