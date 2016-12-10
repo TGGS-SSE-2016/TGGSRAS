@@ -1,0 +1,44 @@
+<openerp>
+    <data>
+      <record model="ir.actions.act_window" id="tggsras_project_progress_start_list">
+          <field name="name">TGGS RAS Project Progress</field>
+          <field name="res_model">tggsras.project</field>
+          <field name="view_type">form</field>
+          <field name="view_mode">tree,form</field>
+          <field name="help" type="html">
+              <p class="oe_view_nocontent_create">Create the first progress here :)
+              </p>
+          </field>
+      </record>
+
+      <record model="ir.ui.view" id="tggsras_project_progress_tree">
+          <field name="name">tggsras.project.progress.tree</field>
+          <field name="model">tggsras.project.progress</field>
+          <field name="arch" type="xml">
+              <tree string="Project Progress List">
+                  <field name="project_id"/>
+                  <field name="duedate"/>
+                  <field name="state"/>
+              </tree>
+          </field>
+      </record>
+
+      <record model="ir.ui.view" id="tggsras_project_progress_tree">
+          <field name="name">tggsras.project.progress.form</field>
+          <field name="model">tggsras.project.progress</field>
+          <field name="arch" type="xml">
+              <form string="Project Progress Form">
+                <sheet>
+                  <group>
+                    <field name="project_id"/>
+                    <field name="duedate"/>
+                    <field name="description"/>
+                    <field name="progress_file"/>
+                  </group>
+                </sheet>
+              </form>
+          </field>
+      </record>
+
+    </data>
+</openerp>

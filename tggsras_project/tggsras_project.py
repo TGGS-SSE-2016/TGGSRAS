@@ -7,7 +7,7 @@ class TggsrasProject(models.Model):
     _inherit = 'mail.thread'
 
     name = fields.Char(string="Name", required=True,
-                       help="Fill your project name", )
+                       help="Fill your project name")
 
    interval_number = fields.Integer(
        string="Interval Number", help="Fill in progress interval number")

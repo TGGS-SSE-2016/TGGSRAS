@@ -1,0 +1,27 @@
+<openerp>
+    <data>
+      <record model="ir.actions.act_window" id="tggsras_torannounce_start_list">
+          <field name="name">TGGS RAS TOR Announcements</field>
+          <field name="res_model">tggsras.torannounce</field>
+          <field name="view_type">form</field>
+          <field name="view_mode">tree,form</field>
+          <field name="help" type="html">
+              <p class="oe_view_nocontent_create">Create the first TOR Announcements here :)
+              </p>
+          </field>
+      </record>
+
+      <record model="ir.ui.view" id="tggsras_project_progress_tree">
+          <field name="name">tggsras.torannounce.tree</field>
+          <field name="model">tggsras.torannounce</field>
+          <field name="arch" type="xml">
+              <tree string="TOR Announcement List">
+                  <field name="project_id"/>
+                  <field name="duedate"/>
+                  <field name="state"/>
+              </tree>
+          </field>
+      </record>
+
+    </data>
+</openerp>
