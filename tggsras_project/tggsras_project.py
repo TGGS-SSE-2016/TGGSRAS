@@ -4,37 +4,79 @@ from openerp import models, fields, api, exceptions, _
 
 class TggsrasProject(models.Model):
     _name = 'tggsras.project'
+    _inherit = 'mail.thread'
 
     name = fields.Char(string="Name", required=True,
                        help="Fill your project name", )
-    customer = fields.Char(string="Customer Name",
+
+   interval_number = fields.Integer(
+       string="Interval Number", help="Fill in progress interval number")
+
+   interval_type = fields.Selection([('day', 'week', 'month', 'year')])
+
+   progress_id = fields.one2many('tggsras.project.progress','project_id', string="Progress")
+
+   customer = fields.Char(string="Customer Name",
                            required=True, help="Fill your customer name", )
-    responsible = fields.Many2one(
-        'res.users', ondelete='set null', string="Responsible", index=True)
+
+    fundowner = fields.many2one(
+        'res.users', ondelete='set null', string="Fund Owner", index=True)
+
     expect_startdate = fields.Date(
         string="Start Date", default=fields.Date.today)
+
     expect_enddate = fields.Date(
         string="Stop Duration", default=fields.Date.today)
+
     estimated_income = fields.Float(
         string="Estimated Income", help="Fill your estimated income")
+
     estimated_expense = fields.Float(
         string="Estimated Expense", help="Fill your estimated expense")
 
-    tor = fields.Binary(string="TOR file",help="Upload TOR file here")
+    tor = fields.Many2many(
+                            string="TOR file"
+                            comodel_name='tggsras.project.file',
+                            relation='tggsras_project_file_rel',
+                            column1='project_id',
+                            column2='project_file_id')
 
-    tor_filename = fields.Char(string="TOR file name")
+    contract = fields.Many2many(
+                            string="Contract file"
+                            comodel_name='tggsras.project.file',
+                            relation='tggsras_project_file_rel',
+                            column1='project_id',
+                            column2='project_file_id')
 
-    contract = fields.Binary(string="Contract file",help="Upload Contract file here")
+    permission = fields.Many2many(
+                            string="Permission file"
+                            comodel_name='tggsras.project.file',
+                            relation='tggsras_project_file_rel',
+                            column1='project_id',
+                            column2='project_file_id')
 
-    contract_filename = fields.Char(string="Contract file name")
+    project_proposal = fields.Many2many(
+                            string="Project Proposal file"
+                            comodel_name='tggsras.project.file',
+                            relation='tggsras_project_file_rel',
+                            column1='project_id',
+                            column2='project_file_id')
 
-    permission = fields.Binary(string="Permission file",help="Upload Contract file here")
-
-    permission_filename = fields.Char(string="Permission file name")
-
-    project_proposal = fields.Binary(string="Project Proposal file",help="Upload Project Proposal file here")
-
-    project_proposal_filename = fields.Char(string="Proposal file name")
+    # tor = fields.Binary(string="TOR file",help="Upload TOR file here")
+    #
+    # tor_filename = fields.Char(string="TOR file name")
+    #
+    # contract = fields.Binary(string="Contract file",help="Upload Contract file here")
+    #
+    # contract_filename = fields.Char(string="Contract file name")
+    #
+    # permission = fields.Binary(string="Permission file",help="Upload Contract file here")
+    #
+    # permission_filename = fields.Char(string="Permission file name")
+    #
+    # project_proposal = fields.Binary(string="Project Proposal file",help="Upload Project Proposal file here")
+    #
+    # project_proposal_filename = fields.Char(string="Proposal file name")
 
     objective = fields.Text()
     scope = fields.Text()

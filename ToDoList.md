@@ -34,8 +34,17 @@
 - [ ] Change accept to Approved
 - [ ] Add action tool tips
 - [ ] Add file upload label
-- [ ] Add file upload model
+- [ ] Add file upload model- one2many model for multiple files
 - [ ] Add progress report model one2many
+- [ ] Add "Recurring Model" for progress
+- [ ] Add "Recurring Model" for invoice
 - [ ] Add TOR announcements models(can be null in main project model) zero/one2many
 - [ ] Fixed can not change project data after contract signed
-- [ ] Add reject action
+- [ ] Add reject actions
+- [ ] Add jump actions
+- [ ] Change Some Project GUI to the same tab page
+
+### Question
+
+- [ ] Discuss Recurring Model
+- [ ] Discuss Constraint

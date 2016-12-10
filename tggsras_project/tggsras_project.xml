@@ -48,22 +48,18 @@
                             <field name="estimated_expense"/>
                         </group>
                         <notebook>
-                            <page string="Objective">
+                            <page string="Details">
                                 <field name="objective"/>
-                            </page>
-
-                            <page string="Scope">
                                 <field name="scope"/>
-                            </page>
-
-                            <page string="Description">
                                 <field name="description"/>
-                            </page>
-
-                            <page string="Expected Result">
                                 <field name="expected_result"/>
                             </page>
 
+                            <page string="Progress">
+                              <field name="progress_id"/>
+                            </page>
+
+<!--
                             <page string="TOR">
                                 <field name="tor_filename" invisible="1"/>
                                 <field name="tor" filename="tor_filename"/>
@@ -82,9 +78,13 @@
                             <page string="Project Proposal">
                                 <field name="project_proposal_filename" invisible="1"/>
                                 <field name="project_proposal" filename="project_proposal_filename"/>
-                            </page>
+                            </page> -->
                         </notebook>
                     </sheet>
+                    <div class="oe_chatter">
+                      <field name="message_follower_ids" widget="mail_followers"/>
+                      <field name="message_ids" widget="mail_thread"/>
+                    </div>
                 </form>
             </field>
         </record>

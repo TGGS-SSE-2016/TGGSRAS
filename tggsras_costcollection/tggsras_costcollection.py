@@ -5,6 +5,7 @@ from openerp import models, fields, api, exceptions, _
 
 class TggsrasCostcollection(models.Model):
     _name = 'tggsras.costcollection'
+    _inherit = 'mail.thread'
 
     company = fields.Many2one(
             'res.partner', ondelete='set null', string="Company", index=True, required=True)
@@ -22,13 +23,13 @@ class TggsrasCostcollection(models.Model):
 
     name = fields.Char(string="Name", compute='_gen_name', store=True)
 
-    signedinvoice = fields.Binary(string="Signed Invoice file",help="Upload signed invoice file here")
-
-    signedinvoice_filename = fields.Char(string="Signed Invoice file name")
-
-    signedbill = fields.Binary(string="Signed Bill file",help="Upload signed bill file here")
-
-    signed_bill_filename = fields.Char(string="Signed Bill file name")
+    # signedinvoice = fields.Binary(string="Signed Invoice file",help="Upload signed invoice file here")
+    #
+    # signedinvoice_filename = fields.Char(string="Signed Invoice file name")
+    #
+    # signedbill = fields.Binary(string="Signed Bill file",help="Upload signed bill file here")
+    #
+    # signed_bill_filename = fields.Char(string="Signed Bill file name")
 
     state = fields.Selection([
         ('invoice', "Invoice"),
