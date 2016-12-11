@@ -23,7 +23,7 @@
           </field>
       </record>
 
-      <record model="ir.ui.view" id="tggsras_project_progress_tree">
+      <record model="ir.ui.view" id="tggsras_project_progress_form">
           <field name="name">tggsras.project.progress.form</field>
           <field name="model">tggsras.project.progress</field>
           <field name="arch" type="xml">
