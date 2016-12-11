@@ -2,7 +2,7 @@
     <data>
       <record model="ir.actions.act_window" id="tggsras_project_progress_start_list">
           <field name="name">TGGS RAS Project Progress</field>
-          <field name="res_model">tggsras.project</field>
+          <field name="res_model">tggsras.project.progress</field>
           <field name="view_type">form</field>
           <field name="view_mode">tree,form</field>
           <field name="help" type="html">

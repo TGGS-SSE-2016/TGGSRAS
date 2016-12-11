@@ -6,20 +6,23 @@ class TggsrasProject(models.Model):
     _name = 'tggsras.project'
     _inherit = 'mail.thread'
 
-    name = fields.Char(string="Name", required=True,
-                       help="Fill your project name")
+    name = fields.Char(string="Name", required=True,help="Fill your project name")
 
-   interval_number = fields.Integer(
-       string="Interval Number", help="Fill in progress interval number")
+    interval_number = fields.Integer(string="Interval Number", help="Fill in progress interval number")
 
-   interval_type = fields.Selection([('day', 'week', 'month', 'year')])
+    interval_type = fields.Selection([
+        ('day', "Day"),
+        ('week', "Week"),
+        ('month', "Month"),
+        ('year', "Year"),
+    ])
 
-   progress_id = fields.one2many('tggsras.project.progress','project_id', string="Progress")
+    progress_id = fields.One2many('tggsras.project.progress','project_id', string="Progress")
 
-   customer = fields.Char(string="Customer Name",
+    customer = fields.Char(string="Customer Name",
                            required=True, help="Fill your customer name", )
 
-    fundowner = fields.many2one(
+    fundowner = fields.Many2one(
         'res.users', ondelete='set null', string="Fund Owner", index=True)
 
     expect_startdate = fields.Date(
@@ -35,28 +38,28 @@ class TggsrasProject(models.Model):
         string="Estimated Expense", help="Fill your estimated expense")
 
     tor = fields.Many2many(
-                            string="TOR file"
+                            string="TOR file",
                             comodel_name='tggsras.project.file',
                             relation='tggsras_project_file_rel',
                             column1='project_id',
                             column2='project_file_id')
 
     contract = fields.Many2many(
-                            string="Contract file"
+                            string="Contract file",
                             comodel_name='tggsras.project.file',
                             relation='tggsras_project_file_rel',
                             column1='project_id',
                             column2='project_file_id')
 
     permission = fields.Many2many(
-                            string="Permission file"
+                            string="Permission file",
                             comodel_name='tggsras.project.file',
                             relation='tggsras_project_file_rel',
                             column1='project_id',
                             column2='project_file_id')
 
     project_proposal = fields.Many2many(
-                            string="Project Proposal file"
+                            string="Project Proposal file",
                             comodel_name='tggsras.project.file',
                             relation='tggsras_project_file_rel',
                             column1='project_id',

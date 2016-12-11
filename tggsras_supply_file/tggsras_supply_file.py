@@ -4,5 +4,5 @@ from openerp import models, fields, api, exceptions, _
 
 
 class TggsrasSupplyFile(models.Model):
-    _name = 'tggsras.Supply.File'
+    _name = 'tggsras.supply.file'
     _inherit = 'tggsras.file'

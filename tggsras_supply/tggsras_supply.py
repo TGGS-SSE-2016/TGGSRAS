@@ -8,7 +8,7 @@ class TggsrasSupply(models.Model):
     _inherit = 'tggsras.costcollection'
 
     signedinvoice = fields.Many2many(
-                            string="Signed Invoice file"
+                            string="Signed Invoice file",
                             comodel_name='tggsras.supply.file',
                             relation='tggsras_building_file_rel',
                             column1='building_id',
@@ -16,7 +16,7 @@ class TggsrasSupply(models.Model):
 
 
     signedbill = fields.Many2many(
-                            string="Signed Bill file"
+                            string="Signed Bill file",
                             comodel_name='tggsras.supply.file',
                             relation='tggsras_building_file_rel',
                             column1='building_id',

@@ -4,5 +4,5 @@ from openerp import models, fields, api, exceptions, _
 
 
 class TggsrasProjectProgressFile(models.Model):
-    _name = 'tggsras.project.progress.File'
+    _name = 'tggsras.project.progress.file'
     _inherit = 'tggsras.file'

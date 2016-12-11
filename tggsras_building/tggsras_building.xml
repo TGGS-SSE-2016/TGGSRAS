@@ -31,14 +31,20 @@
                             <field name="cost"/>
                         </group>
                         <notebook>
-                          <page string="Signed Invoice">
+                          <page string="Signed Invoice">                            
+                            <field name="signedinvoice"/>
+                          </page>
+                          <page string="Signed Bill">
+                            <field name="signedbill" />
+                          </page>
+                          <!-- <page string="Signed Invoice">
                             <field name="signedinvoice_filename" invisible="1"/>
                             <field name="signedinvoice" filename="signedinvoice_filename"/>
                           </page>
                           <page string="Signed Bill">
                             <field name="signed_bill_filename" invisible="1"/>
                             <field name="signedbill" filename="signed_bill_filename"/>
-                          </page>
+                          </page> -->
                         </notebook>
                     </sheet>
                     <div class="oe_chatter">

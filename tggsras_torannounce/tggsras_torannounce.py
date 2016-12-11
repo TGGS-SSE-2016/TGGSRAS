@@ -10,11 +10,11 @@ class TggsrasTorannounce(models.Model):
     name = fields.Char(string="Name", required=True,
                        help="Fill your project name")
 
-    fundowner = fields.many2one(
+    fundowner = fields.Many2one(
         'res.users', ondelete='set null', string="Fund Owner", index=True)
-
+    
     poster = fields.Many2many(
-                            string="Signed Invoice file"
+                            string="Signed Invoice file",
                             comodel_name='tggsras.torannounce.file',
                             relation='tggsras_torannounce_file_rel',
                             column1='torannounce_id',

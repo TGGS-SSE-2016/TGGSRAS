@@ -6,9 +6,9 @@ from openerp import models, fields, api, exceptions, _
 class TggsrasBuilding(models.Model):
     _name = 'tggsras.building'
     _inherit = 'tggsras.costcollection'
-
+    
     signedinvoice = fields.Many2many(
-                            string="Signed Invoice file"
+                            string="Signed Invoice file",
                             comodel_name='tggsras.building.file',
                             relation='tggsras_building_file_rel',
                             column1='building_id',
@@ -16,7 +16,7 @@ class TggsrasBuilding(models.Model):
 
 
     signedbill = fields.Many2many(
-                            string="Signed Bill file"
+                            string="Signed Bill file",
                             comodel_name='tggsras.building.file',
                             relation='tggsras_building_file_rel',
                             column1='building_id',
