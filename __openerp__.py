@@ -22,6 +22,7 @@
     'data': [
         'security/ir.model.access.csv',
         'security/tggsras_security.xml',
+        'tggsras_file/tggsras_file.xml',
         'tggsras_project/tggsras_project.xml',
         'tggsras_project/project_workflow.xml',
         'tggsras_project_progress/tggsras_project_progress.xml',

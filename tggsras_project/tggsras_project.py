@@ -19,11 +19,11 @@ class TggsrasProject(models.Model):
 
     progress_id = fields.One2many('tggsras.project.progress','project_id', string="Progress")
 
-    customer = fields.Char(string="Customer Name",
-                           required=True, help="Fill your customer name", )
+    fundowner = fields.Char(string="Fund Owner",
+                           required=True, help="Fill your fund onwer", )
 
-    fundowner = fields.Many2one(
-        'res.users', ondelete='set null', string="Fund Owner", index=True)
+    researcher_incharge = fields.Many2one(
+        'res.users', ondelete='set null', string="Researcher Incharge", index=True)
 
     expect_startdate = fields.Date(
         string="Start Date", default=fields.Date.today)
@@ -81,10 +81,10 @@ class TggsrasProject(models.Model):
     #
     # project_proposal_filename = fields.Char(string="Proposal file name")
 
-    objective = fields.Text()
-    scope = fields.Text()
-    description = fields.Text()
-    expected_result = fields.Text()
+    objective = fields.Text(string="Objective",help="Please fill in project objective")
+    scope = fields.Text(string="Scope",help="Please fill in project scope")
+    description = fields.Text(string="Description",help=" Please fill in project description")
+    expected_result = fields.Text(string="Expected Result",help="Please fill in project expected result")
 
     state = fields.Selection([
         ('draft', "Draft"),

@@ -1,0 +1,41 @@
+<openerp>
+    <data>
+      <record model="ir.actions.act_window" id="tggsras_file_start">
+        <field name="name">TGGS RAS File</field>
+        <field name="res_model">tggsras.file</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Create the file here :)
+            </p>
+        </field>
+      </record>
+
+      <record model="ir.ui.view" id="tggsras_file_tree">
+          <field name="name">tggsras.file.tree</field>
+          <field name="model">tggsras.file</field>
+          <field name="arch" type="xml">
+              <tree string="File List">
+                <field name="name" invisible="1"/>
+                <field name="filedata" filename="name"/>
+              </tree>
+          </field>
+      </record>
+
+      <record model="ir.ui.view" id="tggsras_file_form">
+          <field name="name">tggsras.file.form</field>
+          <field name="model">tggsras.file</field>
+          <field name="arch" type="xml">
+              <form string="File Form">
+                <sheet>
+                  <group>
+                    <field name="name" invisible="1"/>
+                    <field name="filedata" filename="name"/>
+                  </group>
+                </sheet>
+              </form>
+          </field>
+      </record>
+
+    </data>
+  </openerp>

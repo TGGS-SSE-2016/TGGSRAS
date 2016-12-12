@@ -9,4 +9,4 @@ class TggsrasFile(models.Model):
     name = fields.Char(string="File Name", required=True,
                        help="Fill your file name", )
 
-    filedata = fields.Binary(string="file data",help="Upload file here")
+    filedata = fields.Binary(string="File data",help="Upload file here")

@@ -17,8 +17,8 @@
             <field name="arch" type="xml">
                 <tree string="Project List">
                     <field name="name"/>
-                    <field name="customer"/>
                     <field name="fundowner"/>
+                    <field name="researcher_incharge"/>
                 </tree>
             </field>
         </record>
@@ -40,8 +40,10 @@
                     <sheet>
                         <group>
                             <field name="name"/>
-                            <field name="customer"/>
                             <field name="fundowner"/>
+                            <field name="researcher_incharge"/>
+                            <field name="interval_number"/>
+                            <field name="interval_type"/>
                             <field name="expect_startdate"/>
                             <field name="expect_enddate"/>
                             <field name="estimated_income"/>
@@ -49,12 +51,22 @@
                         </group>
                         <notebook>
                             <page string="Details">
+                              <group>
                                 <field name="objective"/>
                                 <field name="scope"/>
                                 <field name="description"/>
                                 <field name="expected_result"/>
+                              </group>
                             </page>
 
+                            <page string="Document">
+                              <group>
+                                <field name="tor"/>
+                                <field name="contract"/>
+                                <field name="permission"/>
+                                <field name="project_proposal"/>
+                              </group>
+                            </page>
                             <page string="Progress">
                               <field name="progress_id"/>
                             </page>
