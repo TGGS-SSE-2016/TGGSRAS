@@ -1,27 +1,27 @@
 <openerp>
     <data>
-      <record model="ir.actions.act_window" id="_start">
-        <field name="name">TGGS RAS </field>
-        <field name="res_model">tggsras.</field>
+      <record model="ir.actions.act_window" id="tggsras_building_file_start">
+        <field name="name">TGGS RAS Building File</field>
+        <field name="res_model">tggsras.building.file</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
         <field name="help" type="html">
-            <p class="oe_view_nocontent_create">Upload File here :)
+            <p class="oe_view_nocontent_create">Upload Building File here :)
             </p>
         </field>
       </record>
 
-      <record model="ir.ui.view" id="_tree">
-          <field name="name">tggsras..tree</field>
-          <field name="model">tggsras.</field>
+      <record model="ir.ui.view" id="tggsras_building_file_tree">
+          <field name="name">tggsras.building.file.tree</field>
+          <field name="model">tggsras.building.file</field>
           <field name="inherit_id" ref="tggsras_file_tree" />
           <field name="arch" type="xml">
 
           </field>
       </record>
-      <record model="ir.ui.view" id="_for ">
-          <field name="name">tggsras..form</field>
-          <field name="model">tggsras.</field>
+      <record model="ir.ui.view" id="tggsras_building_file_form">
+          <field name="name">tggsras.building.file.form</field>
+          <field name="model">tggsras.building.file</field>
           <field name="inherit_id" ref="tggsras_file_form" />
           <field name="arch" type="xml">
 
