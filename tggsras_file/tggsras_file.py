@@ -9,3 +9,7 @@ class TggsrasFile(models.Model):
     name = fields.Char(string="File Name",help="Fill your file name", )
 
     filedata = fields.Binary(string="File data",help="Upload file here")
+
+    @api.one
+    def deleteFile(self):
+        self.unlink()

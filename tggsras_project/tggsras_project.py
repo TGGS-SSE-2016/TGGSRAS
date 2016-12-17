@@ -19,8 +19,7 @@ class TggsrasProject(models.Model):
 
     progress_id = fields.One2many('tggsras.project.progress','project_id', string="Progress")
 
-    fundowner = fields.Char(string="Fund Owner",
-                           required=True, help="Fill your fund onwer", )
+    fundowner = fields.Char(string="Fund Owner", help="Fill your fund onwer", )
 
     researcher_incharge = fields.Many2one(
         'res.users', ondelete='set null', string="Researcher Incharge", index=True)

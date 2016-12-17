@@ -16,8 +16,9 @@
           <field name="model">tggsras.file</field>
           <field name="arch" type="xml">
               <tree string="File List">
-                <field name="name" invisible="1"/>
+                <field name="name"/>
                 <field name="filedata" filename="name"/>
+                <button type="object" string="Delete File" name="deleteFile"/>
               </tree>
           </field>
       </record>
@@ -28,7 +29,7 @@
           <field name="arch" type="xml">
               <form string="File Form">
                 <sheet>
-                  <group>
+                  <group string="Add file">
                     <field name="name" invisible="1"/>
                     <field name="filedata" filename="name"/>
                   </group>

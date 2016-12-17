@@ -14,17 +14,26 @@
       <record model="ir.ui.view" id="tggsras_project_progress_file_tree">
           <field name="name">tggsras.project.progress.file.tree</field>
           <field name="model">tggsras.project.progress.file</field>
-          <field name="inherit_id" ref="tggsras_file_tree" />
           <field name="arch" type="xml">
-
+            <tree string="File List">
+              <field name="name"/>
+              <field name="filedata" filename="name"/>
+              <button type="object" string="Delete File" name="deleteFile"/>
+            </tree>
           </field>
       </record>
       <record model="ir.ui.view" id="tggsras_project_progress_file_form">
           <field name="name">tggsras.project.progress.file.form</field>
           <field name="model">tggsras.project.progress.file</field>
-          <field name="inherit_id" ref="tggsras_file_form" />
           <field name="arch" type="xml">
-
+            <form string="File Form">
+              <sheet>
+                <group string="Add file">
+                  <field name="name" invisible="1"/>
+                  <field name="filedata" filename="name"/>
+                </group>
+              </sheet>
+            </form>
           </field>
       </record>
 
