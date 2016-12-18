@@ -18,7 +18,7 @@
                 <tree string="Project List">
                     <field name="name"/>
                     <field name="fundowner"/>
-                    <field name="researcher_incharge"/>
+                    <field name="researcher_incharge_id"/>
                 </tree>
             </field>
         </record>
@@ -41,7 +41,7 @@
                         <group>
                             <field name="name"/>
                             <field name="fundowner"/>
-                            <field name="researcher_incharge"/>
+                            <field name="researcher_incharge_id"/>
                             <field name="interval_number"/>
                             <field name="interval_type"/>
                             <field name="expect_startdate"/>

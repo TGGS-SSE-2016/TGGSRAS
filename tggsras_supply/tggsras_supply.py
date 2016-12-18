@@ -28,3 +28,10 @@ class TggsrasSupply(models.Model):
             my_date = parser.parse(r.invoicedate)
             proper_date_string = my_date.strftime('%Y%m%d')
             r.name = 'INVSUP'+proper_date_string+str(r.company.id)
+
+    def new_supply_invoice(self):
+        tggsras_supply_all = self.pool.get('tggsras.supply')
+        #Contains all ids for the model scheduler.demo
+        tggsras_supply_all_ids = self.pool.get('tggsras.supply').search(cr, uid, [])
+        for tggsras_supply_id in tggsras_supply_all_ids:        
+        return None

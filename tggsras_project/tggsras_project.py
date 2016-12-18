@@ -19,10 +19,11 @@ class TggsrasProject(models.Model):
 
     progress_id = fields.One2many('tggsras.project.progress','project_id', string="Progress")
 
-    fundowner = fields.Char(string="Fund Owner", help="Fill your fund onwer", )
+    fundowner = fields.Many2one(
+        'res.partner', ondelete='set null', string="Researcher Incharge", index=True)
 
-    researcher_incharge = fields.Many2one(
-        'res.users', ondelete='set null', string="Researcher Incharge", index=True)
+    researcher_incharge_id = fields.Many2one(
+        'res.partner', ondelete='set null', string="Researcher Incharge", index=True)
 
     expect_startdate = fields.Date(
         string="Start Date", default=fields.Date.today)
@@ -63,22 +64,6 @@ class TggsrasProject(models.Model):
                             relation='tggsras_project_file_rel',
                             column1='project_id',
                             column2='project_file_id')
-
-    # tor = fields.Binary(string="TOR file",help="Upload TOR file here")
-    #
-    # tor_filename = fields.Char(string="TOR file name")
-    #
-    # contract = fields.Binary(string="Contract file",help="Upload Contract file here")
-    #
-    # contract_filename = fields.Char(string="Contract file name")
-    #
-    # permission = fields.Binary(string="Permission file",help="Upload Contract file here")
-    #
-    # permission_filename = fields.Char(string="Permission file name")
-    #
-    # project_proposal = fields.Binary(string="Project Proposal file",help="Upload Project Proposal file here")
-    #
-    # project_proposal_filename = fields.Char(string="Proposal file name")
 
     objective = fields.Text(string="Objective",help="Please fill in project objective")
     scope = fields.Text(string="Scope",help="Please fill in project scope")
@@ -135,12 +120,9 @@ class TggsrasProject(models.Model):
 
     @api.onchange('expect_startdate', 'expect_enddate')
     def _startdate_before(self):
-        fmt = '%Y-%m-%d'
         start = self.expect_startdate
         end = self.expect_enddate
-        d1 = datetime.strptime(start, fmt)
-        d2 = datetime.strptime(end, fmt)
-        dayDiff = (d2-d1).days
+        dayDiff = calLengthDays(start,end)
         if dayDiff < 0:
             return {
                 'warning': {
@@ -148,3 +130,57 @@ class TggsrasProject(models.Model):
                     'message': _("Your date Duration is : "+str(dayDiff)),
                 },
             }
+
+
+    def progress_notify(self, cr, uid, context=None):
+        tggsras_project_all = self.pool.get('tggsras.project')
+        tggsras_project_progress_all = self.pool.get('tggsras.project.progress')
+        #Contains all ids for the model scheduler.demo
+        tggsras_project_all_ids = self.pool.get('tggsras.project').search(cr, uid, [])
+        tggsras_project_progress_all_ids = self.pool.get('tggsras.project.progress').search(cr, uid, [])
+
+        for tggsras_project_id in tggsras_project_all_ids:
+            tggsras_project = tggsras_project_all.browse(cr, uid,tggsras_project_id ,context=context)
+            incharge_id = tggsras_project.researcher_incharge_id
+            name = tggsras_project.name
+            interval_number = tggsras_project.interval_number
+            interval_type = tggsras_project.interval_type
+            _logger.info('line: ' + tggsras_project.name)
+
+            newest_progress = self.search(cr, uid, [('project_id','=',tggsras_project_id)], limit=1, order='id desc')
+            lastprogress_date = newest_progress.submitdate
+            today = datetime.today()
+            dayDiff = calLengthDays(lastprogress_date,today)
+            if interval_type == 'day':
+                if dayDiff > 1:
+                    sendMessage(incharge_id,'Report '+name+' Progress Please')
+            elif interval_type == 'week':
+                if dayDiff > 7:
+                    sendMessage(incharge_id,'Report '+name+' Progress Please')
+
+            elif interval_type == 'month':
+                if dayDiff > 30:
+                    sendMessage(incharge_id,'Report '+name+' Progress Please')
+            elif interval_type == 'year':
+                if dayDiff > 365:
+                    sendMessage(incharge_id,'Report '+name+' Progress Please')
+        return None
+
+    def calLengthDays(self,start,end,dateFormat='%Y-%m-%d'):
+        d1 = datetime.strptime(start, dateFormat)
+        d2 = datetime.strptime(end, dateFormat)
+        dayDiff = (d2-d1).days
+
+        return dayDiff
+
+    def sendMessage(self,incharge_id,msg):
+        post_vars = {'subject': "Progress Please",
+             'body': msg,
+             'partner_ids': [(4, 3)],} # Where "4" adds the ID to the list
+                                       # of followers and "3" is the partner
+        self.message_post(
+        cr, incharge_id, False,
+        type="notification",
+        subtype="mt_comment",
+        context=context,
+        **post_vars)

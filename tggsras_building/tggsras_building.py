@@ -6,7 +6,7 @@ from openerp import models, fields, api, exceptions, _
 class TggsrasBuilding(models.Model):
     _name = 'tggsras.building'
     _inherit = 'tggsras.costcollection'
-    
+
     signedinvoice = fields.Many2many(
                             string="Signed Invoice file",
                             comodel_name='tggsras.building.file',
@@ -29,3 +29,10 @@ class TggsrasBuilding(models.Model):
             my_date = parser.parse(r.invoicedate)
             proper_date_string = my_date.strftime('%Y%m%d')
             r.name = 'INVBUI'+proper_date_string+str(r.company.id)
+
+    def new_building_invoice(self):
+        tggsras_building_all = self.pool.get('tggsras.building')
+        #Contains all ids for the model scheduler.demo
+        tggsras_building_all_ids = self.pool.get('tggsras.building').search(cr, uid, [])
+        for tggsras_building_id in tggsras_building_all_ids:
+        return None

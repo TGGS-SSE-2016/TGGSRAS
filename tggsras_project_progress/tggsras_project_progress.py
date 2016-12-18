@@ -10,6 +10,7 @@ class TggsrasProjectProgress(models.Model):
     project_id = fields.Many2one('tggsras.project', ondelete='cascade', string="Project Name", index=True)
     description = fields.Text()
     duedate = fields.Date(string="Due Date", default=fields.Date.today)
+    submitdate = fields.Date(string="Submit Date", default=fields.Date.today)
     progress_file = fields.Many2many(
         string="Progress file",
         comodel_name='tggsras.project.progress.file',

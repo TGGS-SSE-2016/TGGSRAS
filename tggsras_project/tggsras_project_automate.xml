@@ -1,0 +1,14 @@
+<openerp>
+    <data>
+        <record id="progress_scheduler" model="ir.cron">
+            <field name="name">Progress scheduler</field>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field eval="False" name="doall"/>
+            <field eval="'tggsras.project'" name="model"/>
+            <field eval="'progress_notify'" name="function"/>
+        </record>
+   </data>
+</openerp>
