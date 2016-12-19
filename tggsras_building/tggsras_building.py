@@ -31,8 +31,4 @@ class TggsrasBuilding(models.Model):
             r.name = 'INVBUI'+proper_date_string+str(r.company.id)
 
     def new_building_invoice(self):
-        tggsras_building_all = self.pool.get('tggsras.building')
-        #Contains all ids for the model scheduler.demo
-        tggsras_building_all_ids = self.pool.get('tggsras.building').search(cr, uid, [])
-        for tggsras_building_id in tggsras_building_all_ids:
         return None

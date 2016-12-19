@@ -12,7 +12,7 @@ class TggsrasTorannounce(models.Model):
 
     fundowner = fields.Many2one(
         'res.users', ondelete='set null', string="Fund Owner", index=True)
-    
+
     poster = fields.Many2many(
                             string="Signed Invoice file",
                             comodel_name='tggsras.torannounce.file',
@@ -25,3 +25,6 @@ class TggsrasTorannounce(models.Model):
 
     duedate = fields.Date(
         string="Due Date", default=fields.Date.today)
+
+    def torannounce_notify(self):
+        return None

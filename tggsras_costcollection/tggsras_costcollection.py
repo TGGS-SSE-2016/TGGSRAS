@@ -21,15 +21,7 @@ class TggsrasCostcollection(models.Model):
     cost  = fields.Integer(
         string="Cost(Baht)", help="Fill cost of renting")
 
-    name = fields.Char(string="Name", compute='_gen_name', store=True)
-
-    # signedinvoice = fields.Binary(string="Signed Invoice file",help="Upload signed invoice file here")
-    #
-    # signedinvoice_filename = fields.Char(string="Signed Invoice file name")
-    #
-    # signedbill = fields.Binary(string="Signed Bill file",help="Upload signed bill file here")
-    #
-    # signed_bill_filename = fields.Char(string="Signed Bill file name")
+    name = fields.Char(string="Name", compute='_gen_name', store=True)    
 
     state = fields.Selection([
         ('invoice', "Invoice"),

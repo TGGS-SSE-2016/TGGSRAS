@@ -5,6 +5,6 @@
 
 
 ### Implement
-- [ ] Add Recurring for sending project progress
-- [ ] Add Recurring for create the invoice
-- [ ] Add File upload wizard
+- [ ] Add Recurring for project progress
+- [ ] Add Recurring for Tor announce
+- [ ] Add Recurring for Registered Company Invoice both building and supply
