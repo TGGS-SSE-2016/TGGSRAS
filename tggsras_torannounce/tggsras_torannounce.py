@@ -26,5 +26,5 @@ class TggsrasTorannounce(models.Model):
     duedate = fields.Date(
         string="Due Date", default=fields.Date.today)
 
-    def torannounce_notify(self):
+    def torannounce_notify(self, cr, uid, context=None):
         return None

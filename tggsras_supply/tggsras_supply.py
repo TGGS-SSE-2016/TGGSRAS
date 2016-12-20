@@ -29,5 +29,5 @@ class TggsrasSupply(models.Model):
             proper_date_string = my_date.strftime('%Y%m%d')
             r.name = 'INVSUP'+proper_date_string+str(r.company.id)
 
-    def new_supply_invoice(self):        
+    def new_supply_invoice(self, cr, uid, context=None):        
         return None

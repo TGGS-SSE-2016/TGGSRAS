@@ -122,7 +122,7 @@ class TggsrasProject(models.Model):
     def _startdate_before(self):
         start = self.expect_startdate
         end = self.expect_enddate
-        dayDiff = calLengthDays(start,end)
+        dayDiff = self.calLengthDays(start,end)
         if dayDiff < 0:
             return {
                 'warning': {
@@ -145,12 +145,11 @@ class TggsrasProject(models.Model):
             name = tggsras_project.name
             interval_number = tggsras_project.interval_number
             interval_type = tggsras_project.interval_type
-            _logger.info('line: ' + tggsras_project.name)
 
             newest_progress = self.search(cr, uid, [('project_id','=',tggsras_project_id)], limit=1, order='id desc')
             lastprogress_date = newest_progress.submitdate
             today = datetime.today()
-            dayDiff = calLengthDays(lastprogress_date,today)
+            dayDiff = self.calLengthDays(lastprogress_date,today)
             if interval_type == 'day':
                 if dayDiff > 1:
                     sendMessage(incharge_id,'Report '+name+' Progress Please')
@@ -166,7 +165,8 @@ class TggsrasProject(models.Model):
                     sendMessage(incharge_id,'Report '+name+' Progress Please')
         return None
 
-    def calLengthDays(self,start,end,dateFormat='%Y-%m-%d'):
+    def calLengthDays(self,start,end):
+        dateFormat='%Y-%m-%d'
         d1 = datetime.strptime(start, dateFormat)
         d2 = datetime.strptime(end, dateFormat)
         dayDiff = (d2-d1).days

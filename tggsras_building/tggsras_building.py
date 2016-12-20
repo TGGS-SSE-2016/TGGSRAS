@@ -30,5 +30,5 @@ class TggsrasBuilding(models.Model):
             proper_date_string = my_date.strftime('%Y%m%d')
             r.name = 'INVBUI'+proper_date_string+str(r.company.id)
 
-    def new_building_invoice(self):
+    def new_building_invoice(self, cr, uid, context=None):
         return None
